@@ -1,0 +1,26 @@
+{
+  "name": "gfw-ekuatorial",
+  "version": "1.0.0",
+  "homepage": "https://github.com/fadliawan/gfw-ekuatorial",
+  "authors": [
+    "Ekuatorial Team"
+  ],
+  "description": "Media packages for GFW Ekuatorial",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "ekuatorial",
+    "forests"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}
