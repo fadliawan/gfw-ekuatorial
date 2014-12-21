@@ -64,6 +64,7 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: ['app/styles/scss'],
                     cssDir: ['app/styles/css'],
+                    importPath: ['app/components/normalize.scss'],
                     environment: 'development'
                 }
             }

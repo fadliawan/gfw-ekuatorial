@@ -22,5 +22,8 @@
     "app/components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "normalize.scss": "~3.0.2+normalize.3.0.2"
+  }
 }
