@@ -26,9 +26,15 @@ module.exports = function(grunt) {
                 },
                 files: [
                     'app/*.html',
+                    'app/styles/scss/{,*/}*.scss'
                 ]
+            },
+            compass: {
+                files: ['app/styles/scss/{,*/}*.scss'],
+                tasks: ['compass:dev']
             }
         },
+
         connect: {
             options: {
                 port: 9001,
@@ -46,18 +52,28 @@ module.exports = function(grunt) {
                 }
             }
         },
+
         open: {
             server: {
                 path: 'http://gfw-ekuatorial.local:<%= connect.options.port %>'
             }
+        },
+
+        compass: {
+            dev: {
+                options: {
+                    sassDir: ['app/styles/scss'],
+                    cssDir: ['app/styles/css'],
+                    environment: 'development'
+                }
+            }
         }
     });
 
-    grunt.registerTask('server', function(target) {
-        grunt.task.run([
-            'connect:livereload',
-            'open',
-            'watch'
-        ]);
-    });
+    grunt.registerTask('server', [
+        'compass:dev',
+        'connect:livereload',
+        'open',
+        'watch'
+    ]);
 };
