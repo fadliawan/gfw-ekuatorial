@@ -74,7 +74,7 @@ module.exports = function(grunt) {
     grunt.registerTask('server', [
         'compass:dev',
         'connect:livereload',
-        'open',
+        // 'open',
         'watch'
     ]);
 };

@@ -24,6 +24,6 @@
     "tests"
   ],
   "devDependencies": {
-    "normalize.scss": "~3.0.2+normalize.3.0.2"
+    "foundation": "zurb/bower-foundation#~5.5.0"
   }
 }
