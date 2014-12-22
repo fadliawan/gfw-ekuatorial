@@ -1,5 +1,9 @@
-@import "../../components/normalize.scss/normalize";
+// Responsive grid system
+@import "../../components/foundation/scss/foundation/components/grid";
 
-h1 {
-  color: #B4D455;
-}
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+// Primary stylesheet
+@import "page";
