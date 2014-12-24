@@ -2020,3 +2020,8 @@ select {
   margin-top: 350px;
   width: 200px;
 }
+
+/* line 89, ../scss/_page.scss */
+.youtube {
+  width: 800px;
+}
