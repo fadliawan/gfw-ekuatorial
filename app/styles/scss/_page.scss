@@ -6,4 +6,34 @@
  *
  */
 
+.main-heading {
+  margin: 60px 0 35px;
+}
 
+.small-heading {
+  margin-top: 74px;
+
+  &:after {
+    border-top: 1px solid $pitch-black;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin: 35px auto 0;
+    width: 100px;
+  }
+}
+
+.editors {
+  margin: 0 0 40px;
+}
+
+.writing {
+  width: 800px;
+}
+
+.image-caption {
+  margin: 10px auto 0;
+  width: 800px;
+}

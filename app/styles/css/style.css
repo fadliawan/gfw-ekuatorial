@@ -1676,16 +1676,6 @@ select {
 }
 /* TYPOGRAPHY */
 /* line 3, ../scss/_typography.scss */
-.small-heading {
-  color: #424242;
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  text-align: center;
-}
-
-/* line 12, ../scss/_typography.scss */
 .main-heading {
   color: #000;
   font-family: "Francois One", sans-serif;
@@ -1695,7 +1685,7 @@ select {
   text-align: center;
 }
 
-/* line 21, ../scss/_typography.scss */
+/* line 12, ../scss/_typography.scss */
 .secondary-heading {
   color: #000;
   font-family: "Francois One", sans-serif;
@@ -1704,34 +1694,7 @@ select {
   line-height: 58px;
 }
 
-/* line 29, ../scss/_typography.scss */
-.editor {
-  color: #424242;
-  font-family: "Alegreya", serif;
-  font-size: 22px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: center;
-}
-
-/* line 39, ../scss/_typography.scss */
-.editor__name {
-  font-style: normal;
-  font-weight: 700;
-}
-
-/* line 44, ../scss/_typography.scss */
-.image-caption {
-  color: #919191;
-  font-family: "Alegreya", serif;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-/* line 53, ../scss/_typography.scss */
+/* line 20, ../scss/_typography.scss */
 .subtitle-heading {
   color: #000;
   font-family: "Alegreya", serif;
@@ -1741,8 +1704,45 @@ select {
   line-height: 38px;
 }
 
-/* line 62, ../scss/_typography.scss */
-.writing {
+/* line 29, ../scss/_typography.scss */
+.small-heading {
+  color: #424242;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* line 38, ../scss/_typography.scss */
+.editors {
+  color: #424242;
+  font-family: "Alegreya", serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 48, ../scss/_typography.scss */
+.editors__name {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* line 53, ../scss/_typography.scss */
+.image-caption {
+  color: #919191;
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* line 63, ../scss/_typography.scss */
+.writing p {
   color: #424242;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 22px;
@@ -1750,7 +1750,7 @@ select {
   line-height: 34px;
 }
 
-/* line 70, ../scss/_typography.scss */
+/* line 72, ../scss/_typography.scss */
 .block-quote {
   color: #424242;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -1759,7 +1759,7 @@ select {
   line-height: 24px;
 }
 
-/* line 78, ../scss/_typography.scss */
+/* line 80, ../scss/_typography.scss */
 .character-box {
   color: #424242;
   font-size: 20px;
@@ -1767,30 +1767,30 @@ select {
   line-height: 24px;
 }
 
-/* line 85, ../scss/_typography.scss */
+/* line 87, ../scss/_typography.scss */
 .character-box--name {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
-/* line 89, ../scss/_typography.scss */
+/* line 91, ../scss/_typography.scss */
 .character-box--title {
   font-family: "Alegreya", serif;
 }
 
-/* line 93, ../scss/_typography.scss */
+/* line 95, ../scss/_typography.scss */
 .page-footer {
   color: #424242;
   font-weight: 400;
 }
 
-/* line 98, ../scss/_typography.scss */
+/* line 100, ../scss/_typography.scss */
 .page-footer--title {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 20px;
   line-height: 20px;
 }
 
-/* line 104, ../scss/_typography.scss */
+/* line 106, ../scss/_typography.scss */
 .page-footer--body {
   font-family: "Alegreya", serif;
   font-size: 18px;
@@ -1798,7 +1798,7 @@ select {
   line-height: 24px;
 }
 
-/* line 111, ../scss/_typography.scss */
+/* line 113, ../scss/_typography.scss */
 .page-footer--additional-info {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
@@ -1925,3 +1925,39 @@ select {
  * Ekuatorial.com (2014)
  *
  */
+/* line 9, ../scss/_page.scss */
+.main-heading {
+  margin: 60px 0 35px;
+}
+
+/* line 13, ../scss/_page.scss */
+.small-heading {
+  margin-top: 74px;
+}
+/* line 16, ../scss/_page.scss */
+.small-heading:after {
+  border-top: 1px solid #000;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  margin: 35px auto 0;
+  width: 100px;
+}
+
+/* line 28, ../scss/_page.scss */
+.editors {
+  margin: 0 0 40px;
+}
+
+/* line 32, ../scss/_page.scss */
+.writing {
+  width: 800px;
+}
+
+/* line 36, ../scss/_page.scss */
+.image-caption {
+  margin: 10px auto 0;
+  width: 800px;
+}
