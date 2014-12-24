@@ -1,9 +1,14 @@
 // Responsive grid system
 @import "../../components/foundation/scss/foundation/components/grid";
 
+// Compass mixins
+@import "compass/css3";
+
 // Variables and mixins
 @import "variables";
 @import "mixins";
 
 // Primary stylesheet
+@import "typography";
+@import "header";
 @import "page";

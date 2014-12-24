@@ -1674,33 +1674,28 @@ select {
     left: auto;
   }
 }
-/**
- *
- * Main stylesheet for GFW Ekuatorial Media Packages
- *
- * Ekuatorial.com (2014)
- *
- */
-/* BEGIN Typography test */
-/* line 11, ../scss/_page.scss */
+/* TYPOGRAPHY */
+/* line 3, ../scss/_typography.scss */
 .small-heading {
   color: #424242;
   font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 29px;
+  text-align: center;
 }
 
-/* line 19, ../scss/_page.scss */
+/* line 12, ../scss/_typography.scss */
 .main-heading {
   color: #000;
   font-family: "Francois One", sans-serif;
   font-size: 70px;
   font-weight: 400;
   line-height: 78px;
+  text-align: center;
 }
 
-/* line 27, ../scss/_page.scss */
+/* line 21, ../scss/_typography.scss */
 .secondary-heading {
   color: #000;
   font-family: "Francois One", sans-serif;
@@ -1709,7 +1704,7 @@ select {
   line-height: 58px;
 }
 
-/* line 35, ../scss/_page.scss */
+/* line 29, ../scss/_typography.scss */
 .editor {
   color: #424242;
   font-family: "Alegreya", serif;
@@ -1717,15 +1712,16 @@ select {
   font-style: italic;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
 }
 
-/* line 44, ../scss/_page.scss */
-.editor--name {
+/* line 39, ../scss/_typography.scss */
+.editor__name {
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 49, ../scss/_page.scss */
+/* line 44, ../scss/_typography.scss */
 .image-caption {
   color: #919191;
   font-family: "Alegreya", serif;
@@ -1735,7 +1731,7 @@ select {
   line-height: 16px;
 }
 
-/* line 58, ../scss/_page.scss */
+/* line 53, ../scss/_typography.scss */
 .subtitle-heading {
   color: #000;
   font-family: "Alegreya", serif;
@@ -1745,7 +1741,7 @@ select {
   line-height: 38px;
 }
 
-/* line 67, ../scss/_page.scss */
+/* line 62, ../scss/_typography.scss */
 .writing {
   color: #424242;
   font-family: "Alegreya Sans", sans-serif;
@@ -1754,7 +1750,7 @@ select {
   line-height: 34px;
 }
 
-/* line 75, ../scss/_page.scss */
+/* line 70, ../scss/_typography.scss */
 .block-quote {
   color: #424242;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -1763,7 +1759,7 @@ select {
   line-height: 24px;
 }
 
-/* line 83, ../scss/_page.scss */
+/* line 78, ../scss/_typography.scss */
 .character-box {
   color: #424242;
   font-size: 20px;
@@ -1771,30 +1767,30 @@ select {
   line-height: 24px;
 }
 
-/* line 90, ../scss/_page.scss */
+/* line 85, ../scss/_typography.scss */
 .character-box--name {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
-/* line 94, ../scss/_page.scss */
+/* line 89, ../scss/_typography.scss */
 .character-box--title {
   font-family: "Alegreya", serif;
 }
 
-/* line 98, ../scss/_page.scss */
+/* line 93, ../scss/_typography.scss */
 .page-footer {
   color: #424242;
   font-weight: 400;
 }
 
-/* line 103, ../scss/_page.scss */
+/* line 98, ../scss/_typography.scss */
 .page-footer--title {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 20px;
   line-height: 20px;
 }
 
-/* line 109, ../scss/_page.scss */
+/* line 104, ../scss/_typography.scss */
 .page-footer--body {
   font-family: "Alegreya", serif;
   font-size: 18px;
@@ -1802,11 +1798,130 @@ select {
   line-height: 24px;
 }
 
-/* line 116, ../scss/_page.scss */
+/* line 111, ../scss/_typography.scss */
 .page-footer--additional-info {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
 
-/* END Typography test */
+/* HEADER */
+/* line 6, ../scss/_header.scss */
+.page-header {
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 10, ../scss/_header.scss */
+.topbar {
+  overflow: hidden;
+}
+@media only screen and (min-width: 640px) {
+  /* line 10, ../scss/_header.scss */
+  .topbar {
+    height: 80px;
+  }
+}
+
+/* line 18, ../scss/_header.scss */
+.ekuatorial-logo {
+  background: url("../img/ekuatorial-logo.png") no-repeat;
+  float: left;
+  height: 50px;
+  margin: 13px 17px 0 0;
+  width: 33px;
+}
+
+/* line 26, ../scss/_header.scss */
+.ekuatorial-logo__link {
+  display: block;
+  height: 50px;
+  text-indent: -9999em;
+  width: 33px;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 33, ../scss/_header.scss */
+  .story-nav {
+    float: left;
+  }
+}
+
+/* line 39, ../scss/_header.scss */
+.story-nav__label {
+  float: left;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+/* line 48, ../scss/_header.scss */
+.story-nav__items {
+  float: left;
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+@media only screen and (min-width: 640px) {
+  /* line 48, ../scss/_header.scss */
+  .story-nav__items {
+    margin-bottom: 0;
+  }
+}
+
+/* line 59, ../scss/_header.scss */
+.story-nav__item {
+  display: block;
+  float: left;
+  margin: 0 7px;
+}
+@media only screen and (min-width: 640px) {
+  /* line 59, ../scss/_header.scss */
+  .story-nav__item {
+    margin: 0 10px;
+  }
+}
+/* line 68, ../scss/_header.scss */
+.story-nav__item a {
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  color: #424242;
+  display: block;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+}
+/* line 81, ../scss/_header.scss */
+.story-nav__item a:hover {
+  background: #E0E0E0;
+}
+
+/* line 88, ../scss/_header.scss */
+.story-nav__item--active a {
+  background: #B71C1C;
+  color: #FFF;
+}
+/* line 92, ../scss/_header.scss */
+.story-nav__item--active a:hover {
+  background: #B71C1C;
+}
+
+/**
+ *
+ * Main stylesheet for GFW Ekuatorial Media Packages
+ *
+ * Ekuatorial.com (2014)
+ *
+ */
