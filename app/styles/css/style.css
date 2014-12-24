@@ -1741,8 +1741,8 @@ select {
   line-height: 21px;
 }
 
-/* line 63, ../scss/_typography.scss */
-.writing p {
+/* line 62, ../scss/_typography.scss */
+.writing-p {
   color: #424242;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 22px;
@@ -1750,7 +1750,7 @@ select {
   line-height: 34px;
 }
 
-/* line 72, ../scss/_typography.scss */
+/* line 70, ../scss/_typography.scss */
 .block-quote {
   color: #424242;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -1759,7 +1759,7 @@ select {
   line-height: 24px;
 }
 
-/* line 80, ../scss/_typography.scss */
+/* line 78, ../scss/_typography.scss */
 .character-box {
   color: #424242;
   font-size: 20px;
@@ -1767,30 +1767,30 @@ select {
   line-height: 24px;
 }
 
-/* line 87, ../scss/_typography.scss */
+/* line 85, ../scss/_typography.scss */
 .character-box--name {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
-/* line 91, ../scss/_typography.scss */
+/* line 89, ../scss/_typography.scss */
 .character-box--title {
   font-family: "Alegreya", serif;
 }
 
-/* line 95, ../scss/_typography.scss */
+/* line 93, ../scss/_typography.scss */
 .page-footer {
   color: #424242;
   font-weight: 400;
 }
 
-/* line 100, ../scss/_typography.scss */
+/* line 98, ../scss/_typography.scss */
 .page-footer--title {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 20px;
   line-height: 20px;
 }
 
-/* line 106, ../scss/_typography.scss */
+/* line 104, ../scss/_typography.scss */
 .page-footer--body {
   font-family: "Alegreya", serif;
   font-size: 18px;
@@ -1798,7 +1798,7 @@ select {
   line-height: 24px;
 }
 
-/* line 113, ../scss/_typography.scss */
+/* line 111, ../scss/_typography.scss */
 .page-footer--additional-info {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
@@ -1957,17 +1957,22 @@ select {
 }
 
 /* line 36, ../scss/_page.scss */
+.writing-p {
+  width: 680px;
+}
+
+/* line 40, ../scss/_page.scss */
 .image-caption {
   margin: 10px auto 0;
   width: 800px;
 }
 
-/* line 41, ../scss/_page.scss */
+/* line 45, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
 
-/* line 45, ../scss/_page.scss */
+/* line 49, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
