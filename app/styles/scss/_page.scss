@@ -37,6 +37,13 @@
   width: 680px;
 }
 
+.block-quote {
+  border-left: 4px solid $pitch-black;
+  margin-left: 0;
+  padding-left: 20px;
+  width: 656px;
+}
+
 .image-caption {
   margin: 10px auto 0;
   width: 800px;
@@ -53,4 +60,28 @@
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
+}
+
+.timeline-wrapper {
+  margin: 0 auto;
+  width: 950px;
+}
+
+.landscape-image-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 950px;
+}
+
+.landscape-image__image {
+  float: left;
+  width: 730px;
+}
+
+.landscape-image__caption {
+  @extend .image-caption;
+
+  float: right;
+  margin-top: 350px;
+  width: 200px;
 }
