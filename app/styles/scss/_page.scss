@@ -10,6 +10,11 @@
   margin: 60px 0 35px;
 }
 
+.secondary-heading {
+  border-top: 2px solid $light-grey;
+  padding-top: 35px;
+}
+
 .small-heading {
   margin-top: 74px;
 
@@ -67,6 +72,10 @@
   width: 950px;
 }
 
+.youtube {
+  width: 800px;
+}
+
 .landscape-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -86,6 +95,21 @@
   width: 200px;
 }
 
-.youtube {
+.portrait-image-wrapper {
+  @extend .landscape-image-wrapper;
+
   width: 800px;
+}
+
+.portrait-image__image {
+  float: left;
+  margin-right: 20px;
+}
+
+.portrait-image__caption {
+  @extend .image-caption;
+
+  float: left;
+  margin-top: 420px;
+  width: 200px;
 }

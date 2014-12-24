@@ -1732,7 +1732,7 @@ select {
 }
 
 /* line 53, ../scss/_typography.scss */
-.image-caption, .landscape-image__caption {
+.image-caption, .landscape-image__caption, .portrait-image__caption {
   color: #919191;
   font-family: "Alegreya", serif;
   font-size: 16px;
@@ -1935,10 +1935,16 @@ select {
 }
 
 /* line 13, ../scss/_page.scss */
+.secondary-heading {
+  border-top: 2px solid #E0E0E0;
+  padding-top: 35px;
+}
+
+/* line 18, ../scss/_page.scss */
 .small-heading {
   margin-top: 74px;
 }
-/* line 16, ../scss/_page.scss */
+/* line 21, ../scss/_page.scss */
 .small-heading:after {
   border-top: 1px solid #000;
   content: ".";
@@ -1950,22 +1956,22 @@ select {
   width: 100px;
 }
 
-/* line 28, ../scss/_page.scss */
+/* line 33, ../scss/_page.scss */
 .editors {
   margin: 0 0 40px;
 }
 
-/* line 32, ../scss/_page.scss */
+/* line 37, ../scss/_page.scss */
 .writing {
   width: 800px;
 }
 
-/* line 36, ../scss/_page.scss */
+/* line 41, ../scss/_page.scss */
 .writing-p {
   width: 680px;
 }
 
-/* line 40, ../scss/_page.scss */
+/* line 45, ../scss/_page.scss */
 .block-quote {
   border-left: 4px solid #000;
   margin-left: 0;
@@ -1973,55 +1979,73 @@ select {
   width: 656px;
 }
 
-/* line 47, ../scss/_page.scss */
-.image-caption, .landscape-image__caption {
+/* line 52, ../scss/_page.scss */
+.image-caption, .landscape-image__caption, .portrait-image__caption {
   margin: 10px auto 0;
   width: 800px;
 }
 
-/* line 52, ../scss/_page.scss */
+/* line 57, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
 
-/* line 56, ../scss/_page.scss */
+/* line 61, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 60, ../scss/_page.scss */
+/* line 65, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 65, ../scss/_page.scss */
+/* line 70, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 70, ../scss/_page.scss */
-.landscape-image-wrapper {
+/* line 75, ../scss/_page.scss */
+.youtube {
+  width: 800px;
+}
+
+/* line 79, ../scss/_page.scss */
+.landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
   width: 950px;
 }
 
-/* line 76, ../scss/_page.scss */
+/* line 85, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 81, ../scss/_page.scss */
+/* line 90, ../scss/_page.scss */
 .landscape-image__caption {
   float: right;
   margin-top: 350px;
   width: 200px;
 }
 
-/* line 89, ../scss/_page.scss */
-.youtube {
+/* line 98, ../scss/_page.scss */
+.portrait-image-wrapper {
   width: 800px;
+}
+
+/* line 104, ../scss/_page.scss */
+.portrait-image__image {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 109, ../scss/_page.scss */
+.portrait-image__caption {
+  float: left;
+  margin-top: 420px;
+  width: 200px;
 }
