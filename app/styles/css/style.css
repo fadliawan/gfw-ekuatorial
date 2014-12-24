@@ -1976,3 +1976,9 @@ select {
 .juxtapose {
   width: 800px;
 }
+
+/* line 53, ../scss/_page.scss */
+.popcorn-wrapper {
+  margin: 0 auto;
+  width: 950px;
+}
