@@ -1,0 +1,121 @@
+/**
+ *
+ * Main stylesheet for GFW Ekuatorial Media Packages
+ *
+ * Ekuatorial.com (2014)
+ *
+ */
+
+
+/* BEGIN Typography test */
+.small-heading {
+  color: $dark-grey;
+  font-family: $alegreya-sans-sc;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.main-heading {
+  color: $pitch-black;
+  font-family: $francois-one;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+}
+
+.secondary-heading {
+  color: $pitch-black;
+  font-family: $francois-one;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.editor {
+  color: $dark-grey;
+  font-family: $alegreya;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.editor--name {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.image-caption {
+  color: $grey;
+  font-family: $alegreya;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.subtitle-heading {
+  color: $pitch-black;
+  font-family: $alegreya;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.writing {
+  color: $dark-grey;
+  font-family: $alegreya-sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.block-quote {
+  color: $dark-grey;
+  font-family: $alegreya-sans-sc;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.character-box {
+  color: $dark-grey;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.character-box--name {
+  font-family: $alegreya-sans-sc;
+}
+
+.character-box--title {
+  font-family: $alegreya;
+}
+
+.page-footer {
+  color: $dark-grey;
+  font-weight: 400;
+}
+
+.page-footer--title {
+  font-family: $alegreya-sans-sc;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.page-footer--body {
+  font-family: $alegreya;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.page-footer--additional-info {
+  font-family: $alegreya-sans;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* END Typography test */
