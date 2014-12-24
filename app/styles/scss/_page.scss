@@ -38,8 +38,17 @@
   width: 800px;
 }
 
+.writing--character {
+  overflow: hidden;
+}
+
 .writing-p {
   width: 680px;
+
+  .writing--character & {
+    float: left;
+    width: 560px;
+  }
 }
 
 .block-quote {
@@ -89,7 +98,6 @@
 
 .landscape-image__caption {
   @extend .image-caption;
-
   float: right;
   margin-top: 350px;
   width: 200px;
@@ -97,7 +105,6 @@
 
 .portrait-image-wrapper {
   @extend .landscape-image-wrapper;
-
   width: 800px;
 }
 
@@ -108,8 +115,18 @@
 
 .portrait-image__caption {
   @extend .image-caption;
-
   float: left;
   margin-top: 420px;
   width: 200px;
+}
+
+.character {
+  float: right;
+  margin-top: 40px;
+  width: 200px;
+}
+
+.character__photo {
+  @include border-radius(100px);
+  margin-bottom: 15px;
 }

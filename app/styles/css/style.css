@@ -1764,37 +1764,38 @@ select {
 }
 
 /* line 82, ../scss/_typography.scss */
-.character-box {
+.character {
   color: #424242;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
+  text-align: center;
 }
 
-/* line 89, ../scss/_typography.scss */
-.character-box--name {
+/* line 90, ../scss/_typography.scss */
+.character__name {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
-/* line 93, ../scss/_typography.scss */
-.character-box--title {
+/* line 94, ../scss/_typography.scss */
+.character__title {
   font-family: "Alegreya", serif;
 }
 
-/* line 97, ../scss/_typography.scss */
+/* line 98, ../scss/_typography.scss */
 .page-footer {
   color: #424242;
   font-weight: 400;
 }
 
-/* line 102, ../scss/_typography.scss */
+/* line 103, ../scss/_typography.scss */
 .page-footer--title {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 20px;
   line-height: 20px;
 }
 
-/* line 108, ../scss/_typography.scss */
+/* line 109, ../scss/_typography.scss */
 .page-footer--body {
   font-family: "Alegreya", serif;
   font-size: 18px;
@@ -1802,7 +1803,7 @@ select {
   line-height: 24px;
 }
 
-/* line 115, ../scss/_typography.scss */
+/* line 116, ../scss/_typography.scss */
 .page-footer--additional-info {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
@@ -1967,11 +1968,21 @@ select {
 }
 
 /* line 41, ../scss/_page.scss */
-.writing-p {
-  width: 680px;
+.writing--character {
+  overflow: hidden;
 }
 
 /* line 45, ../scss/_page.scss */
+.writing-p {
+  width: 680px;
+}
+/* line 48, ../scss/_page.scss */
+.writing--character .writing-p {
+  float: left;
+  width: 560px;
+}
+
+/* line 54, ../scss/_page.scss */
 .block-quote {
   border-left: 4px solid #000;
   margin-left: 0;
@@ -1979,73 +1990,88 @@ select {
   width: 656px;
 }
 
-/* line 52, ../scss/_page.scss */
+/* line 61, ../scss/_page.scss */
 .image-caption, .landscape-image__caption, .portrait-image__caption {
   margin: 10px auto 0;
   width: 800px;
 }
 
-/* line 57, ../scss/_page.scss */
+/* line 66, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
 
-/* line 61, ../scss/_page.scss */
+/* line 70, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 65, ../scss/_page.scss */
+/* line 74, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 70, ../scss/_page.scss */
+/* line 79, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 75, ../scss/_page.scss */
+/* line 84, ../scss/_page.scss */
 .youtube {
   width: 800px;
 }
 
-/* line 79, ../scss/_page.scss */
+/* line 88, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
   width: 950px;
 }
 
-/* line 85, ../scss/_page.scss */
+/* line 94, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 90, ../scss/_page.scss */
+/* line 99, ../scss/_page.scss */
 .landscape-image__caption {
   float: right;
   margin-top: 350px;
   width: 200px;
 }
 
-/* line 98, ../scss/_page.scss */
+/* line 106, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 104, ../scss/_page.scss */
+/* line 111, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 109, ../scss/_page.scss */
+/* line 116, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
+}
+
+/* line 123, ../scss/_page.scss */
+.character {
+  float: right;
+  margin-top: 40px;
+  width: 200px;
+}
+
+/* line 129, ../scss/_page.scss */
+.character__photo {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  margin-bottom: 15px;
 }
