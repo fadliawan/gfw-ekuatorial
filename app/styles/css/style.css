@@ -1961,3 +1961,13 @@ select {
   margin: 10px auto 0;
   width: 800px;
 }
+
+/* line 41, ../scss/_page.scss */
+.image-caption__em {
+  color: #B71C1C;
+}
+
+/* line 45, ../scss/_page.scss */
+.juxtapose {
+  width: 800px;
+}
