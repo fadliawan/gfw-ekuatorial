@@ -1,0 +1,10 @@
+/* MIXINS */
+
+%link {
+  color: $ekuatorial-red;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
