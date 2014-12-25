@@ -1789,25 +1789,36 @@ select {
 }
 
 /* line 103, ../scss/_typography.scss */
-.page-footer--title {
+.footer-heading {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
 }
 
-/* line 109, ../scss/_typography.scss */
-.page-footer--body {
+/* line 110, ../scss/_typography.scss */
+.footer-p, .documents__title {
   font-family: "Alegreya", serif;
   font-size: 18px;
   font-style: italic;
   line-height: 24px;
 }
-
 /* line 116, ../scss/_typography.scss */
-.page-footer--additional-info {
+.footer-p a, .documents__title a {
+  color: #B71C1C;
+  text-decoration: none;
+}
+
+/* line 126, ../scss/_typography.scss */
+.documents__actions {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+/* line 131, ../scss/_typography.scss */
+.documents__actions a {
+  color: #B71C1C;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -2090,4 +2101,67 @@ select {
   border-top: 2px solid #E0E0E0;
   margin-top: 80px;
   padding: 60px 0 80px;
+}
+
+/* line 9, ../scss/_footer.scss */
+.page-footer__contents {
+  width: 800px;
+}
+
+/* line 13, ../scss/_footer.scss */
+.footer-heading {
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+  padding-top: 55px;
+}
+
+/* line 20, ../scss/_footer.scss */
+.footer-heading--behind-reports {
+  background-image: url("../img/circle-man.png");
+}
+
+/* line 24, ../scss/_footer.scss */
+.footer-heading--documents {
+  background-image: url("../img/downloadable.png");
+}
+
+/* line 28, ../scss/_footer.scss */
+.documents {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 33, ../scss/_footer.scss */
+.documents__item {
+  background-position: left 2px;
+  background-repeat: no-repeat;
+  margin-top: 34px;
+  padding-left: 30px;
+}
+
+/* line 40, ../scss/_footer.scss */
+.documents__item--file {
+  background-image: url("../img/icon-single-file.png");
+}
+
+/* line 44, ../scss/_footer.scss */
+.documents__item--video {
+  background-image: url("../img/icon-video.png");
+  background-position: left 4px;
+}
+
+/* line 49, ../scss/_footer.scss */
+.documents__item--picture {
+  background-image: url("../img/icon-picture.png");
+}
+
+/* line 53, ../scss/_footer.scss */
+.documents__title {
+  margin-bottom: 14px;
+}
+
+/* line 57, ../scss/_footer.scss */
+.documents__actions {
+  margin-top: 0;
 }

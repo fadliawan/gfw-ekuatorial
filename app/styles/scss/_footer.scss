@@ -5,3 +5,55 @@
   margin-top: 80px;
   padding: 60px 0 80px;
 }
+
+.page-footer__contents {
+  width: 800px;
+}
+
+.footer-heading {
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+  padding-top: 55px;
+}
+
+.footer-heading--behind-reports {
+  background-image: url('../img/circle-man.png');
+}
+
+.footer-heading--documents {
+  background-image: url('../img/downloadable.png');
+}
+
+.documents {
+  list-style: none;
+  padding-left: 0;
+}
+
+.documents__item {
+  background-position: left 2px;
+  background-repeat: no-repeat;
+  margin-top: 34px;
+  padding-left: 30px;
+}
+
+.documents__item--file {
+  background-image: url('../img/icon-single-file.png');
+}
+
+.documents__item--video {
+  background-image: url('../img/icon-video.png');
+  background-position: left 4px;
+}
+
+.documents__item--picture {
+  background-image: url('../img/icon-picture.png');
+}
+
+.documents__title {
+  margin-bottom: 14px;
+}
+
+.documents__actions {
+  margin-top: 0;
+}

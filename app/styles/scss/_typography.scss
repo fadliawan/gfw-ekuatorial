@@ -100,21 +100,36 @@
   font-weight: 400;
 }
 
-.page-footer--title {
+.footer-heading {
   font-family: $alegreya-sans-sc;
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
 }
 
-.page-footer--body {
+.footer-p {
   font-family: $alegreya;
   font-size: 18px;
   font-style: italic;
   line-height: 24px;
+
+  a {
+    color: $ekuatorial-red;
+    text-decoration: none;
+  }
 }
 
-.page-footer--additional-info {
+.documents__title {
+  @extend .footer-p;
+}
+
+.documents__actions {
   font-family: $alegreya-sans;
   font-size: 18px;
   line-height: 24px;
+
+  a {
+    color: $ekuatorial-red;
+    text-decoration: none;
+  }
 }
