@@ -1,0 +1,120 @@
+/* TYPOGRAPHY */
+
+.main-heading {
+  color: $pitch-black;
+  font-family: $francois-one;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  text-align: center;
+}
+
+.secondary-heading {
+  color: $pitch-black;
+  font-family: $francois-one;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.subtitle-heading {
+  color: $pitch-black;
+  font-family: $alegreya;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.small-heading {
+  color: $dark-grey;
+  font-family: $alegreya-sans-sc;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+
+.editors {
+  color: $dark-grey;
+  font-family: $alegreya;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.editors__name {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.image-caption {
+  color: $grey;
+  font-family: $alegreya;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.writing-p {
+  color: $dark-grey;
+  font-family: $alegreya-sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+
+  a {
+    color: $ekuatorial-red;
+  }
+}
+
+.block-quote {
+  color: $dark-grey;
+  font-family: $alegreya-sans-sc;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.character {
+  color: $dark-grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.character__name {
+  font-family: $alegreya-sans-sc;
+}
+
+.character__title {
+  font-family: $alegreya;
+}
+
+.page-footer {
+  color: $dark-grey;
+  font-weight: 400;
+}
+
+.page-footer--title {
+  font-family: $alegreya-sans-sc;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.page-footer--body {
+  font-family: $alegreya;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.page-footer--additional-info {
+  font-family: $alegreya-sans;
+  font-size: 18px;
+  line-height: 24px;
+}

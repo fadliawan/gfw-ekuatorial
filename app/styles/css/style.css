@@ -2075,3 +2075,11 @@ select {
   border-radius: 100px;
   margin-bottom: 15px;
 }
+
+/* FOOTER */
+/* line 3, ../scss/_footer.scss */
+.page-footer {
+  border-top: 2px solid #E0E0E0;
+  margin-top: 80px;
+  padding: 60px 0 80px;
+}
