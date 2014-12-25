@@ -1989,86 +1989,94 @@ select {
   padding-left: 20px;
   width: 656px;
 }
+/* line 60, ../scss/_page.scss */
+.block-quote:before {
+  content: "\201C";
+}
+/* line 64, ../scss/_page.scss */
+.block-quote:after {
+  content: "\201D";
+}
 
-/* line 61, ../scss/_page.scss */
+/* line 69, ../scss/_page.scss */
 .image-caption, .landscape-image__caption, .portrait-image__caption {
   margin: 10px auto 0;
   width: 800px;
 }
 
-/* line 66, ../scss/_page.scss */
+/* line 74, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
 
-/* line 70, ../scss/_page.scss */
+/* line 78, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 74, ../scss/_page.scss */
+/* line 82, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 79, ../scss/_page.scss */
+/* line 87, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 84, ../scss/_page.scss */
+/* line 92, ../scss/_page.scss */
 .youtube {
   width: 800px;
 }
 
-/* line 88, ../scss/_page.scss */
+/* line 96, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
   width: 950px;
 }
 
-/* line 94, ../scss/_page.scss */
+/* line 102, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 99, ../scss/_page.scss */
+/* line 107, ../scss/_page.scss */
 .landscape-image__caption {
   float: right;
   margin-top: 350px;
   width: 200px;
 }
 
-/* line 106, ../scss/_page.scss */
+/* line 114, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 111, ../scss/_page.scss */
+/* line 119, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 116, ../scss/_page.scss */
+/* line 124, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 123, ../scss/_page.scss */
+/* line 131, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 129, ../scss/_page.scss */
+/* line 137, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
