@@ -31,7 +31,9 @@ $header-logo-height: 50px;
 }
 
 .story-nav {
-
+  @media #{$medium} {
+    overflow: hidden;
+  }
 }
 
 .story-nav__label {

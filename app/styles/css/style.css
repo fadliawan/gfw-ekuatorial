@@ -1864,7 +1864,14 @@ select {
   width: 33px;
 }
 
-/* line 37, ../scss/_header.scss */
+@media only screen and (min-width: 640px) {
+  /* line 33, ../scss/_header.scss */
+  .story-nav {
+    overflow: hidden;
+  }
+}
+
+/* line 39, ../scss/_header.scss */
 .story-nav__label {
   float: left;
   font-family: "Francois One", sans-serif;
@@ -1874,7 +1881,7 @@ select {
   text-transform: uppercase;
 }
 
-/* line 46, ../scss/_header.scss */
+/* line 48, ../scss/_header.scss */
 .story-nav__items {
   float: left;
   list-style: none;
@@ -1882,25 +1889,25 @@ select {
   padding: 0;
 }
 @media only screen and (min-width: 640px) {
-  /* line 46, ../scss/_header.scss */
+  /* line 48, ../scss/_header.scss */
   .story-nav__items {
     margin-bottom: 0;
   }
 }
 
-/* line 57, ../scss/_header.scss */
+/* line 59, ../scss/_header.scss */
 .story-nav__item {
   display: block;
   float: left;
   margin: 0 7px;
 }
 @media only screen and (min-width: 640px) {
-  /* line 57, ../scss/_header.scss */
+  /* line 59, ../scss/_header.scss */
   .story-nav__item {
     margin: 0 10px;
   }
 }
-/* line 66, ../scss/_header.scss */
+/* line 68, ../scss/_header.scss */
 .story-nav__item a {
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -1919,17 +1926,17 @@ select {
   text-decoration: none;
   width: 40px;
 }
-/* line 79, ../scss/_header.scss */
+/* line 81, ../scss/_header.scss */
 .story-nav__item a:hover {
   background: #E0E0E0;
 }
 
-/* line 86, ../scss/_header.scss */
+/* line 88, ../scss/_header.scss */
 .story-nav__item--active a {
   background: #B71C1C;
   color: #FFF;
 }
-/* line 90, ../scss/_header.scss */
+/* line 92, ../scss/_header.scss */
 .story-nav__item--active a:hover {
   background: #B71C1C;
 }
