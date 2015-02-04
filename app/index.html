@@ -12,9 +12,9 @@
 </head>
 <body>
   <div class="intro-container">
-    <video autoplay loop poster="videos/posters/intro-bg.jpg" class="intro-video">
+    <!-- <video autoplay loop poster="videos/posters/intro-bg.jpg" class="intro-video">
       <source src="videos/intro.mp4" type="video/mp4">
-    </video>
+    </video> -->
 
     <div class="intro-maps">
       <img src="images/maps/indonesia.png" width="1202" height="484" usemap="#indonesia"
@@ -27,6 +27,23 @@
         class="map-kalteng js-map js-map-kalteng">
       <img src="images/maps/papua.png" width="1202" height="484" usemap="#indonesia"
         class="map-papua js-map js-map-papua">
+
+      <div class="map-pin map-pin-aceh js-map-pin js-map-pin-aceh">
+        <div class="pin-line js-pin-line"></div>
+        <div class="pin-text js-pin-text"><a href="/">Aceh</a></div>
+      </div>
+      <div class="map-pin map-pin-riau js-map-pin js-map-pin-riau">
+        <div class="pin-line js-pin-line"></div>
+        <div class="pin-text js-pin-text"><a href="/">Rawa Tripa</a></div>
+      </div>
+      <div class="map-pin map-pin-kalteng js-map-pin js-map-pin-kalteng">
+        <div class="pin-line js-pin-line"></div>
+        <div class="pin-text js-pin-text"><a href="/">KalTeng</a></div>
+      </div>
+      <div class="map-pin map-pin-papua js-map-pin js-map-pin-papua">
+        <div class="pin-line js-pin-line"></div>
+        <div class="pin-text js-pin-text"><a href="/">Papua</a></div>
+      </div>
     </div>
 
     <map name="indonesia">
@@ -54,8 +71,14 @@
       var $kaltengArea = $('.js-area-kalteng');
       var $papuaArea = $('.js-area-papua');
 
+      var $allPins = $('.js-map-pin');
+      var $acehPin = $('.js-map-pin-aceh');
+      var $riauPin = $('.js-map-pin-riau');
+      var $kaltengPin = $('.js-map-pin-kalteng');
+      var $papuaPin = $('.js-map-pin-papua');
+
       $allMaps.on('click', function() {
-        $(this).fadeOut();
+        $(this).add($allPins).fadeOut();
       });
 
       $acehArea.on('mouseenter', function() {
@@ -63,6 +86,7 @@
 
         $allMaps.fadeOut();
         $acehMap.fadeIn();
+        showPin($acehPin);
       });
 
       $riauArea.on('mouseenter', function() {
@@ -70,6 +94,7 @@
 
         $allMaps.fadeOut();
         $riauMap.fadeIn();
+        showPin($riauPin);
       });
 
       $kaltengArea.on('mouseenter', function() {
@@ -77,6 +102,7 @@
 
         $allMaps.fadeOut();
         $kaltengMap.fadeIn();
+        showPin($kaltengPin);
       });
 
       $papuaArea.on('mouseenter', function() {
@@ -84,7 +110,20 @@
 
         $allMaps.fadeOut();
         $papuaMap.fadeIn();
+        showPin($papuaPin);
       });
+
+      function showPin($pin) {
+        if ($pin.is(':visible')) return;
+
+        $allPins.fadeOut();
+        $pin.fadeIn(200, function() {
+          $(this)
+            .find('.js-pin-line').slideDown(200)
+            .end()
+            .find('.js-pin-text').slideDown(200);
+        });
+      }
     })(jQuery);
   </script>
 

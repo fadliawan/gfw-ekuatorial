@@ -7,7 +7,7 @@
  * Ekuatorial.com (2014)
  *
  */
-/* line 11, ../scss/intro.scss */
+/* line 13, ../scss/intro.scss */
 html,
 body {
   height: 100%;
@@ -16,13 +16,13 @@ body {
   width: 100%;
 }
 
-/* line 19, ../scss/intro.scss */
+/* line 21, ../scss/intro.scss */
 .intro-container {
   height: 100%;
   width: 100%;
 }
 
-/* line 24, ../scss/intro.scss */
+/* line 26, ../scss/intro.scss */
 .intro-video {
   background: url("../../videos/posters/intro-bg.jpg") no-repeat;
   background-size: cover;
@@ -36,15 +36,15 @@ body {
   z-index: -100;
 }
 
-/* line 41, ../scss/intro.scss */
+/* line 45, ../scss/intro.scss */
 .intro-maps {
   height: 484px;
-  margin: 0 auto;
+  margin: 250px auto 0;
   position: relative;
   width: 1202px;
 }
 
-/* line 48, ../scss/intro.scss */
+/* line 52, ../scss/intro.scss */
 .map-indonesia, .map-aceh, .map-riau, .map-kalteng, .map-papua {
   display: none;
   position: absolute;
@@ -53,8 +53,114 @@ body {
   z-index: 20;
 }
 
-/* line 56, ../scss/intro.scss */
+/* line 60, ../scss/intro.scss */
 .map-indonesia {
   display: block;
   z-index: 10;
+}
+
+/* line 84, ../scss/intro.scss */
+.map-pin {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background: #000;
+  border: 4px solid rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box;
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+  display: none;
+  height: 18px;
+  position: absolute;
+  width: 18px;
+  z-index: 30;
+}
+/* line 97, ../scss/intro.scss */
+.map-pin:before {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background: #000;
+  border: 4px solid #FFF;
+  content: ".";
+  height: 4px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 4px;
+  text-indent: -9999px;
+  z-index: 32;
+}
+
+/* line 112, ../scss/intro.scss */
+.map-pin-aceh {
+  left: 38px;
+  top: 57px;
+}
+
+/* line 117, ../scss/intro.scss */
+.map-pin-riau {
+  left: 153px;
+  top: 160px;
+}
+
+/* line 122, ../scss/intro.scss */
+.map-pin-kalteng {
+  left: 467px;
+  top: 226px;
+}
+
+/* line 127, ../scss/intro.scss */
+.map-pin-papua {
+  left: 975px;
+  top: 212px;
+}
+
+/* line 132, ../scss/intro.scss */
+.pin-line {
+  background: #000;
+  display: none;
+  height: 90px;
+  left: 7px;
+  position: absolute;
+  top: -80px;
+  width: 4px;
+  z-index: 31;
+}
+
+/* line 143, ../scss/intro.scss */
+.pin-text {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #000;
+  display: none;
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 8px 10px;
+  position: absolute;
+  text-align: center;
+  top: -114px;
+  white-space: nowrap;
+}
+/* line 154, ../scss/intro.scss */
+.pin-text a {
+  color: #F44336;
+  text-decoration: none;
+}
+/* line 159, ../scss/intro.scss */
+.map-pin-aceh .pin-text {
+  left: -16px;
+}
+/* line 163, ../scss/intro.scss */
+.map-pin-riau .pin-text {
+  left: -36px;
+}
+/* line 167, ../scss/intro.scss */
+.map-pin-kalteng .pin-text {
+  left: -27px;
+}
+/* line 171, ../scss/intro.scss */
+.map-pin-papua .pin-text {
+  left: -22px;
 }
