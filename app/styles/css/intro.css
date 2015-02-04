@@ -35,3 +35,26 @@ body {
   bottom: 0;
   z-index: -100;
 }
+
+/* line 41, ../scss/intro.scss */
+.intro-maps {
+  height: 484px;
+  margin: 0 auto;
+  position: relative;
+  width: 1202px;
+}
+
+/* line 48, ../scss/intro.scss */
+.map-indonesia, .map-aceh, .map-riau, .map-kalteng, .map-papua {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+/* line 56, ../scss/intro.scss */
+.map-indonesia {
+  display: block;
+  z-index: 10;
+}

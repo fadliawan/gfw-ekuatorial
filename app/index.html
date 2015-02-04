@@ -15,7 +15,78 @@
     <video autoplay loop poster="videos/posters/intro-bg.jpg" class="intro-video">
       <source src="videos/intro.mp4" type="video/mp4">
     </video>
+
+    <div class="intro-maps">
+      <img src="images/maps/indonesia.png" width="1202" height="484" usemap="#indonesia"
+        class="map-indonesia js-map js-map-indonesia">
+      <img src="images/maps/aceh.png" width="1202" height="484" usemap="#indonesia"
+        class="map-aceh js-map js-map-aceh">
+      <img src="images/maps/riau.png" width="1202" height="484" usemap="#indonesia"
+        class="map-riau js-map js-map-riau">
+      <img src="images/maps/kalteng.png" width="1202" height="484" usemap="#indonesia"
+        class="map-kalteng js-map js-map-kalteng">
+      <img src="images/maps/papua.png" width="1202" height="484" usemap="#indonesia"
+        class="map-papua js-map js-map-papua">
+    </div>
+
+    <map name="indonesia">
+      <area shape="poly" coords="0,37,33,46,63,47,78,75,78,129,10,62" class="js-area-aceh">
+      <area shape="poly" coords="140,121,206,160,254,155,238,203,190,212,144,187,130,169,129,139" class="js-area-riau">
+      <area shape="poly" coords="452,239,530,178,552,175,573,227,539,281,480,287,460,269" class="js-area-kalteng">
+      <area shape="poly" coords="945,238,968,186,1060,208,1076,260,1076,295,1029,299,1004,268" class="js-area-papua">
+    </map>
   </div>
+
+  <script src="components/jquery/dist/jquery.min.js"></script>
+  <script>
+    (function($) {
+
+      "use strict";
+
+      var $allMaps = $('.js-map:not(.js-map-indonesia)');
+      var $acehMap = $('.js-map-aceh');
+      var $riauMap = $('.js-map-riau');
+      var $kaltengMap = $('.js-map-kalteng');
+      var $papuaMap = $('.js-map-papua');
+
+      var $acehArea = $('.js-area-aceh');
+      var $riauArea = $('.js-area-riau');
+      var $kaltengArea = $('.js-area-kalteng');
+      var $papuaArea = $('.js-area-papua');
+
+      $allMaps.on('click', function() {
+        $(this).fadeOut();
+      });
+
+      $acehArea.on('mouseenter', function() {
+        if ($acehMap.is(':visible')) return;
+
+        $allMaps.fadeOut();
+        $acehMap.fadeIn();
+      });
+
+      $riauArea.on('mouseenter', function() {
+        if ($riauMap.is(':visible')) return;
+
+        $allMaps.fadeOut();
+        $riauMap.fadeIn();
+      });
+
+      $kaltengArea.on('mouseenter', function() {
+        if ($kaltengMap.is(':visible')) return;
+
+        $allMaps.fadeOut();
+        $kaltengMap.fadeIn();
+      });
+
+      $papuaArea.on('mouseenter', function() {
+        if ($papuaMap.is(':visible')) return;
+
+        $allMaps.fadeOut();
+        $papuaMap.fadeIn();
+      });
+    })(jQuery);
+  </script>
 
   <script src="http://localhost:35729/livereload.js"></script>
 </body>

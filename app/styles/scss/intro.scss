@@ -37,3 +37,40 @@ body {
   bottom: 0;
   z-index: -100;
 }
+
+.intro-maps {
+  height: 484px;
+  margin: 0 auto;
+  position: relative;
+  width: 1202px;
+}
+
+%intro-map {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.map-indonesia {
+  @extend %intro-map;
+  display: block;
+  z-index: 10;
+}
+
+.map-aceh {
+  @extend %intro-map;
+}
+
+.map-riau {
+  @extend %intro-map;
+}
+
+.map-kalteng {
+  @extend %intro-map;
+}
+
+.map-papua {
+  @extend %intro-map;
+}
