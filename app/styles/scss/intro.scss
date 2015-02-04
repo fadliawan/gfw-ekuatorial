@@ -1,0 +1,39 @@
+/**
+ *
+ * Main stylesheet for GFW Ekuatorial Media Packages Intro Page.
+ *
+ * @author Ekuatorial Team
+ *
+ * Ekuatorial.com (2014)
+ *
+ */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.intro-container {
+  height: 100%;
+  width: 100%;
+}
+
+.intro-video {
+  // Full page video background: http://demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video
+  background: url('../../videos/posters/intro-bg.jpg') no-repeat;
+  background-size: cover;
+
+  min-width: 100%;
+  min-height: 100%;
+
+  width: auto;
+  height: auto;
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+}
