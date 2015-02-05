@@ -36,7 +36,15 @@ body {
   z-index: -100;
 }
 
-/* line 45, ../scss/intro.scss */
+/* line 43, ../scss/intro.scss */
+.intro-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 52, ../scss/intro.scss */
 .intro-maps {
   height: 484px;
   margin: 250px auto 0;
@@ -44,7 +52,7 @@ body {
   width: 1202px;
 }
 
-/* line 52, ../scss/intro.scss */
+/* line 59, ../scss/intro.scss */
 .map-indonesia, .map-aceh, .map-riau, .map-kalteng, .map-papua {
   display: none;
   position: absolute;
@@ -53,13 +61,13 @@ body {
   z-index: 20;
 }
 
-/* line 60, ../scss/intro.scss */
+/* line 67, ../scss/intro.scss */
 .map-indonesia {
   display: block;
   z-index: 10;
 }
 
-/* line 84, ../scss/intro.scss */
+/* line 91, ../scss/intro.scss */
 .map-pin {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -76,7 +84,7 @@ body {
   width: 18px;
   z-index: 30;
 }
-/* line 97, ../scss/intro.scss */
+/* line 104, ../scss/intro.scss */
 .map-pin:before {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -93,31 +101,31 @@ body {
   z-index: 32;
 }
 
-/* line 112, ../scss/intro.scss */
+/* line 119, ../scss/intro.scss */
 .map-pin-aceh {
   left: 38px;
   top: 57px;
 }
 
-/* line 117, ../scss/intro.scss */
+/* line 124, ../scss/intro.scss */
 .map-pin-riau {
   left: 153px;
   top: 160px;
 }
 
-/* line 122, ../scss/intro.scss */
+/* line 129, ../scss/intro.scss */
 .map-pin-kalteng {
   left: 467px;
   top: 226px;
 }
 
-/* line 127, ../scss/intro.scss */
+/* line 134, ../scss/intro.scss */
 .map-pin-papua {
   left: 975px;
   top: 212px;
 }
 
-/* line 132, ../scss/intro.scss */
+/* line 139, ../scss/intro.scss */
 .pin-line {
   background: #000;
   display: none;
@@ -129,7 +137,7 @@ body {
   z-index: 31;
 }
 
-/* line 143, ../scss/intro.scss */
+/* line 150, ../scss/intro.scss */
 .pin-text {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -143,24 +151,24 @@ body {
   top: -114px;
   white-space: nowrap;
 }
-/* line 154, ../scss/intro.scss */
+/* line 161, ../scss/intro.scss */
 .pin-text a {
   color: #F44336;
   text-decoration: none;
 }
-/* line 159, ../scss/intro.scss */
+/* line 166, ../scss/intro.scss */
 .map-pin-aceh .pin-text {
   left: -16px;
 }
-/* line 163, ../scss/intro.scss */
+/* line 170, ../scss/intro.scss */
 .map-pin-riau .pin-text {
   left: -36px;
 }
-/* line 167, ../scss/intro.scss */
+/* line 174, ../scss/intro.scss */
 .map-pin-kalteng .pin-text {
   left: -27px;
 }
-/* line 171, ../scss/intro.scss */
+/* line 178, ../scss/intro.scss */
 .map-pin-papua .pin-text {
   left: -22px;
 }

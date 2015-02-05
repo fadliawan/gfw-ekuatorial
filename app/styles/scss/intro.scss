@@ -40,6 +40,13 @@ body {
   z-index: -100;
 }
 
+.intro-overlay {
+  background: rgba(0, 0, 0, .7);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
 /// Maps ///
 
 .intro-maps {

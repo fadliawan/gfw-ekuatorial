@@ -16,35 +16,39 @@
       <source src="videos/intro.mp4" type="video/mp4">
     </video>
 
-    <div class="intro-maps">
-      <img src="images/maps/indonesia.png" width="1202" height="484" usemap="#indonesia"
-        class="map-indonesia js-map js-map-indonesia">
-      <img src="images/maps/aceh.png" width="1202" height="484" usemap="#indonesia"
-        class="map-aceh js-map js-map-aceh">
-      <img src="images/maps/riau.png" width="1202" height="484" usemap="#indonesia"
-        class="map-riau js-map js-map-riau">
-      <img src="images/maps/kalteng.png" width="1202" height="484" usemap="#indonesia"
-        class="map-kalteng js-map js-map-kalteng">
-      <img src="images/maps/papua.png" width="1202" height="484" usemap="#indonesia"
-        class="map-papua js-map js-map-papua">
+    <div class="intro-overlay">
+      <div class="intro-maps">
+        <img src="images/maps/indonesia.png" width="1202" height="484" usemap="#indonesia"
+          class="map-indonesia js-map js-map-indonesia">
+        <img src="images/maps/aceh.png" width="1202" height="484" usemap="#indonesia"
+          class="map-aceh js-map js-map-aceh">
+        <img src="images/maps/riau.png" width="1202" height="484" usemap="#indonesia"
+          class="map-riau js-map js-map-riau">
+        <img src="images/maps/kalteng.png" width="1202" height="484" usemap="#indonesia"
+          class="map-kalteng js-map js-map-kalteng">
+        <img src="images/maps/papua.png" width="1202" height="484" usemap="#indonesia"
+          class="map-papua js-map js-map-papua">
 
-      <div class="map-pin map-pin-aceh js-map-pin js-map-pin-aceh">
-        <div class="pin-line js-pin-line"></div>
-        <div class="pin-text js-pin-text"><a href="/">Aceh</a></div>
-      </div>
-      <div class="map-pin map-pin-riau js-map-pin js-map-pin-riau">
-        <div class="pin-line js-pin-line"></div>
-        <div class="pin-text js-pin-text"><a href="/">Rawa Tripa</a></div>
-      </div>
-      <div class="map-pin map-pin-kalteng js-map-pin js-map-pin-kalteng">
-        <div class="pin-line js-pin-line"></div>
-        <div class="pin-text js-pin-text"><a href="/">KalTeng</a></div>
-      </div>
-      <div class="map-pin map-pin-papua js-map-pin js-map-pin-papua">
-        <div class="pin-line js-pin-line"></div>
-        <div class="pin-text js-pin-text"><a href="/">Papua</a></div>
+        <div class="map-pin map-pin-aceh js-map-pin js-map-pin-aceh">
+          <div class="pin-line js-pin-line"></div>
+          <div class="pin-text js-pin-text"><a href="/">Aceh</a></div>
+        </div>
+        <div class="map-pin map-pin-riau js-map-pin js-map-pin-riau">
+          <div class="pin-line js-pin-line"></div>
+          <div class="pin-text js-pin-text"><a href="/">Rawa Tripa</a></div>
+        </div>
+        <div class="map-pin map-pin-kalteng js-map-pin js-map-pin-kalteng">
+          <div class="pin-line js-pin-line"></div>
+          <div class="pin-text js-pin-text"><a href="/">KalTeng</a></div>
+        </div>
+        <div class="map-pin map-pin-papua js-map-pin js-map-pin-papua">
+          <div class="pin-line js-pin-line"></div>
+          <div class="pin-text js-pin-text"><a href="/">Papua</a></div>
+        </div>
       </div>
     </div>
+
+
 
     <map name="indonesia">
       <area shape="poly" coords="0,37,33,46,63,47,78,75,78,129,10,62" class="js-area-aceh">
@@ -61,62 +65,37 @@
       "use strict";
 
       var $allMaps = $('.js-map:not(.js-map-indonesia)');
-      var $acehMap = $('.js-map-aceh');
-      var $riauMap = $('.js-map-riau');
-      var $kaltengMap = $('.js-map-kalteng');
-      var $papuaMap = $('.js-map-papua');
-
-      var $acehArea = $('.js-area-aceh');
-      var $riauArea = $('.js-area-riau');
-      var $kaltengArea = $('.js-area-kalteng');
-      var $papuaArea = $('.js-area-papua');
-
       var $allPins = $('.js-map-pin');
-      var $acehPin = $('.js-map-pin-aceh');
-      var $riauPin = $('.js-map-pin-riau');
-      var $kaltengPin = $('.js-map-pin-kalteng');
-      var $papuaPin = $('.js-map-pin-papua');
+      var $allPinLines = $('.js-pin-line');
+      var $allPinTexts = $('.js-pin-text');
+
+      var locations = ['aceh', 'riau', 'kalteng', 'papua'];
+      var $maps = {}, $area = {}, $pins = {};
 
       $allMaps.on('click', function() {
         $(this).add($allPins).fadeOut();
       });
 
-      $acehArea.on('mouseenter', function() {
-        if ($acehMap.is(':visible')) return;
+      locations.forEach(function(location) {
+        $maps[location] = $('.js-map-' + location);
+        $area[location] = $('.js-area-' + location);
+        $pins[location] = $('.js-map-pin-' + location);
 
-        $allMaps.fadeOut();
-        $acehMap.fadeIn();
-        showPin($acehPin);
-      });
+        $area[location].on('mouseenter', function() {
+          if ($maps[location].is(':visible')) return;
 
-      $riauArea.on('mouseenter', function() {
-        if ($riauMap.is(':visible')) return;
-
-        $allMaps.fadeOut();
-        $riauMap.fadeIn();
-        showPin($riauPin);
-      });
-
-      $kaltengArea.on('mouseenter', function() {
-        if ($kaltengMap.is(':visible')) return;
-
-        $allMaps.fadeOut();
-        $kaltengMap.fadeIn();
-        showPin($kaltengPin);
-      });
-
-      $papuaArea.on('mouseenter', function() {
-        if ($papuaMap.is(':visible')) return;
-
-        $allMaps.fadeOut();
-        $papuaMap.fadeIn();
-        showPin($papuaPin);
+          $allMaps.fadeOut();
+          $maps[location].fadeIn();
+          showPin($pins[location]);
+        });
       });
 
       function showPin($pin) {
         if ($pin.is(':visible')) return;
 
         $allPins.fadeOut();
+        $allPinLines.hide();
+        $allPinTexts.hide();
         $pin.fadeIn(200, function() {
           $(this)
             .find('.js-pin-line').slideDown(200)
