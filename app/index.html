@@ -58,8 +58,9 @@
       <div class="intro-summary">
         <p class="summary-date">Tempo, 22 Juli 2012</p>
         <h2 class="summary-heading">Jejak Hitam Gubernur Hijau</h2>
-        <p class="summary-text">Hutan gambut Rawa Tripa, Aceh, salah satu "harta karun" provinsi itu, di ambang kehancuran.
-        Penyidik gabungan dari Jakarta terus menelisik pelanggaran-pelanggaran yang berujung pada perusakan hutan itu...</p>
+        <p class="summary-text">
+          <span class="js-summary-typed"></span>
+        </p>
       </div>
     </div>
 
@@ -72,10 +73,13 @@
   </div>
 
   <script src="components/jquery/dist/jquery.min.js"></script>
+  <script src="components/typed.js/dist/typed.min.js"></script>
   <script>
     (function($) {
 
       "use strict";
+
+      /// Maps ///
 
       var $allMaps = $('.js-map:not(.js-map-indonesia)');
       var $allPins = $('.js-map-pin');
@@ -116,6 +120,15 @@
             .find('.js-pin-text').slideDown(200);
         });
       }
+
+      /// Typed text ///
+
+      $('.js-summary-typed').typed({
+        strings: ['Hutan gambut Rawa Tripa, Aceh, salah satu "harta karun" provinsi itu, di ambang kehancuran. Penyidik gabungan dari Jakarta terus menelisik pelanggaran-pelanggaran yang berujung pada perusakan hutan itu'],
+        typeSpeed: 0,
+        cursorChar: "_"
+      });
+
     })(jQuery);
   </script>
 
