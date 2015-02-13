@@ -9,6 +9,7 @@
  */
 
 @import "compass/css3";
+@import "variables";
 
 html,
 body {
@@ -42,16 +43,45 @@ body {
 
 .intro-overlay {
   background: rgba(0, 0, 0, .7);
-  height: 100%;
+  min-height: 100%;
+  padding-bottom: 80px;
   position: absolute;
   width: 100%;
+}
+
+.intro-branding__logo {
+  background: url('../img/ekuatorial-logo-grey.png') no-repeat;
+  height: 50px;
+  margin: 50px auto 12px;
+  text-indent: -9999px;
+  width: 33px;
+}
+
+.intro-branding__text {
+  color: rgba(255, 255, 255, .5);
+  font-family: $alegreya-sans-sc;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.intro-heading {
+  h1 {
+    color: white;
+    font-family: $alegreya;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 30px 0 35px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 /// Maps ///
 
 .intro-maps {
   height: 484px;
-  margin: 250px auto 0; // NOTE: Temporary top margin
+  margin: 0 auto 0; // NOTE: Temporary top margin
   position: relative;
   width: 1202px;
 }
@@ -90,7 +120,7 @@ body {
 
 .map-pin {
   @include border-radius(100px);
-  background: #000;
+  background: $pitch-black;
   border: 4px solid rgba(0, 0, 0, .5);
   // Required for transparent border with opaque background color
   -webkit-background-clip: padding-box; /* for Safari */
@@ -149,9 +179,9 @@ body {
 
 .pin-text {
   @include border-radius(5px);
-  background: #000;
+  background: $pitch-black;
   display: none;
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: $alegreya-sans-sc;
   padding: 8px 10px;
   position: absolute;
   text-align: center;
@@ -178,6 +208,37 @@ body {
   .map-pin-papua & {
     left: -22px;
   }
+}
+
+/// Summary ///
+
+.intro-summary {
+  color: white;
+  margin: 30px auto 0;
+  width: 750px;
+}
+
+.summary-date {
+  font-family: $alegreya-sans;
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.summary-heading {
+  font-family: $alegreya;
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 5px;
+  text-transform: uppercase;
+}
+
+.summary-text {
+  font-family: $alegreya;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.2em;
+  margin: 0;
 }
 
 

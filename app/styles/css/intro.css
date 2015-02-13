@@ -7,7 +7,8 @@
  * Ekuatorial.com (2014)
  *
  */
-/* line 13, ../scss/intro.scss */
+/* VARIABLES */
+/* line 14, ../scss/intro.scss */
 html,
 body {
   height: 100%;
@@ -16,13 +17,13 @@ body {
   width: 100%;
 }
 
-/* line 21, ../scss/intro.scss */
+/* line 22, ../scss/intro.scss */
 .intro-container {
   height: 100%;
   width: 100%;
 }
 
-/* line 26, ../scss/intro.scss */
+/* line 27, ../scss/intro.scss */
 .intro-video {
   background: url("../../videos/posters/intro-bg.jpg") no-repeat;
   background-size: cover;
@@ -36,23 +37,53 @@ body {
   z-index: -100;
 }
 
-/* line 43, ../scss/intro.scss */
+/* line 44, ../scss/intro.scss */
 .intro-overlay {
   background: rgba(0, 0, 0, 0.7);
-  height: 100%;
+  min-height: 100%;
+  padding-bottom: 80px;
   position: absolute;
   width: 100%;
 }
 
 /* line 52, ../scss/intro.scss */
+.intro-branding__logo {
+  background: url("../img/ekuatorial-logo-grey.png") no-repeat;
+  height: 50px;
+  margin: 50px auto 12px;
+  text-indent: -9999px;
+  width: 33px;
+}
+
+/* line 60, ../scss/intro.scss */
+.intro-branding__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 69, ../scss/intro.scss */
+.intro-heading h1 {
+  color: white;
+  font-family: "Alegreya", serif;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 30px 0 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 82, ../scss/intro.scss */
 .intro-maps {
   height: 484px;
-  margin: 250px auto 0;
+  margin: 0 auto 0;
   position: relative;
   width: 1202px;
 }
 
-/* line 59, ../scss/intro.scss */
+/* line 89, ../scss/intro.scss */
 .map-indonesia, .map-aceh, .map-riau, .map-kalteng, .map-papua {
   display: none;
   position: absolute;
@@ -61,13 +92,13 @@ body {
   z-index: 20;
 }
 
-/* line 67, ../scss/intro.scss */
+/* line 97, ../scss/intro.scss */
 .map-indonesia {
   display: block;
   z-index: 10;
 }
 
-/* line 91, ../scss/intro.scss */
+/* line 121, ../scss/intro.scss */
 .map-pin {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -84,7 +115,7 @@ body {
   width: 18px;
   z-index: 30;
 }
-/* line 104, ../scss/intro.scss */
+/* line 134, ../scss/intro.scss */
 .map-pin:before {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -101,31 +132,31 @@ body {
   z-index: 32;
 }
 
-/* line 119, ../scss/intro.scss */
+/* line 149, ../scss/intro.scss */
 .map-pin-aceh {
   left: 38px;
   top: 57px;
 }
 
-/* line 124, ../scss/intro.scss */
+/* line 154, ../scss/intro.scss */
 .map-pin-riau {
   left: 153px;
   top: 160px;
 }
 
-/* line 129, ../scss/intro.scss */
+/* line 159, ../scss/intro.scss */
 .map-pin-kalteng {
   left: 467px;
   top: 226px;
 }
 
-/* line 134, ../scss/intro.scss */
+/* line 164, ../scss/intro.scss */
 .map-pin-papua {
   left: 975px;
   top: 212px;
 }
 
-/* line 139, ../scss/intro.scss */
+/* line 169, ../scss/intro.scss */
 .pin-line {
   background: #000;
   display: none;
@@ -137,7 +168,7 @@ body {
   z-index: 31;
 }
 
-/* line 150, ../scss/intro.scss */
+/* line 180, ../scss/intro.scss */
 .pin-text {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -151,24 +182,57 @@ body {
   top: -114px;
   white-space: nowrap;
 }
-/* line 161, ../scss/intro.scss */
+/* line 191, ../scss/intro.scss */
 .pin-text a {
   color: #F44336;
   text-decoration: none;
 }
-/* line 166, ../scss/intro.scss */
+/* line 196, ../scss/intro.scss */
 .map-pin-aceh .pin-text {
   left: -16px;
 }
-/* line 170, ../scss/intro.scss */
+/* line 200, ../scss/intro.scss */
 .map-pin-riau .pin-text {
   left: -36px;
 }
-/* line 174, ../scss/intro.scss */
+/* line 204, ../scss/intro.scss */
 .map-pin-kalteng .pin-text {
   left: -27px;
 }
-/* line 178, ../scss/intro.scss */
+/* line 208, ../scss/intro.scss */
 .map-pin-papua .pin-text {
   left: -22px;
+}
+
+/* line 215, ../scss/intro.scss */
+.intro-summary {
+  color: white;
+  margin: 30px auto 0;
+  width: 750px;
+}
+
+/* line 221, ../scss/intro.scss */
+.summary-date {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 228, ../scss/intro.scss */
+.summary-heading {
+  font-family: "Alegreya", serif;
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 5px;
+  text-transform: uppercase;
+}
+
+/* line 236, ../scss/intro.scss */
+.summary-text {
+  font-family: "Alegreya", serif;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.2em;
+  margin: 0;
 }
