@@ -175,10 +175,10 @@ body {
 
 /* line 183, ../scss/intro.scss */
 .pin-line {
-  -moz-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  -webkit-transition: height 0.3s;
-  transition: height 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background: #000;
   height: 0;
   left: 7px;
@@ -190,9 +190,22 @@ body {
 /* line 193, ../scss/intro.scss */
 .map-pin.active .pin-line {
   height: 90px;
+  width: 4px;
+}
+/* line 198, ../scss/intro.scss */
+.pin-line.pin-line--hz {
+  height: 4px;
+  left: 15px;
+  top: 8px;
+  width: 0;
+}
+/* line 204, ../scss/intro.scss */
+.map-pin.active .pin-line.pin-line--hz {
+  height: 4px;
+  width: 90px;
 }
 
-/* line 198, ../scss/intro.scss */
+/* line 211, ../scss/intro.scss */
 .pin-text {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -209,36 +222,44 @@ body {
   top: -114px;
   white-space: nowrap;
 }
-/* line 209, ../scss/intro.scss */
+/* line 222, ../scss/intro.scss */
+.pin-text.pin-text--hz {
+  top: -8px;
+}
+/* line 226, ../scss/intro.scss */
 .pin-text a {
   color: #F44336;
   text-decoration: none;
 }
-/* line 214, ../scss/intro.scss */
+/* line 231, ../scss/intro.scss */
 .map-pin-aceh .pin-text {
-  left: -16px;
+  left: -40px;
 }
-/* line 218, ../scss/intro.scss */
+/* line 235, ../scss/intro.scss */
 .map-pin-riau .pin-text {
   left: -36px;
 }
-/* line 222, ../scss/intro.scss */
+/* line 238, ../scss/intro.scss */
+.map-pin-riau .pin-text.pin-text--hz {
+  left: 103px;
+}
+/* line 243, ../scss/intro.scss */
 .map-pin-kalteng .pin-text {
   left: -27px;
 }
-/* line 226, ../scss/intro.scss */
+/* line 247, ../scss/intro.scss */
 .map-pin-papua .pin-text {
   left: -22px;
 }
 
-/* line 233, ../scss/intro.scss */
+/* line 254, ../scss/intro.scss */
 .intro-summary {
   color: white;
   margin: 30px auto 0;
   width: 750px;
 }
 
-/* line 239, ../scss/intro.scss */
+/* line 260, ../scss/intro.scss */
 .summary-date {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 20px;
@@ -246,7 +267,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 246, ../scss/intro.scss */
+/* line 267, ../scss/intro.scss */
 .summary-heading {
   font-family: "Alegreya", serif;
   font-style: italic;
@@ -255,7 +276,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 254, ../scss/intro.scss */
+/* line 275, ../scss/intro.scss */
 .summary-text {
   font-family: "Alegreya", serif;
   font-size: 26px;
@@ -264,7 +285,7 @@ body {
   margin: 0;
 }
 
-/* line 263, ../scss/intro.scss */
+/* line 284, ../scss/intro.scss */
 .typed-cursor {
   font-size: 26px;
   opacity: 1;

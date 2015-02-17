@@ -181,7 +181,7 @@ body {
 }
 
 .pin-line {
-  @include transition(height .3s);
+  @include transition(all .3s);
   background: #000;
   height: 0;
   left: 7px;
@@ -192,6 +192,19 @@ body {
 
   .map-pin.active & {
     height: 90px;
+    width: 4px;
+  }
+
+  &.pin-line--hz {
+    height: 4px;
+    left: 15px;
+    top: 8px;
+    width: 0;
+
+    .map-pin.active & {
+      height: 4px;
+      width: 90px;
+    }
   }
 }
 
@@ -206,17 +219,25 @@ body {
   top: -114px;
   white-space: nowrap;
 
+  &.pin-text--hz {
+    top: -8px;
+  }
+
   a {
     color: #F44336;
     text-decoration: none;
   }
 
   .map-pin-aceh & {
-    left: -16px;
+    left: -40px;
   }
 
   .map-pin-riau & {
     left: -36px;
+
+    &.pin-text--hz {
+      left: 103px;
+    }
   }
 
   .map-pin-kalteng & {
