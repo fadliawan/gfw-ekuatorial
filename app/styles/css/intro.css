@@ -103,19 +103,23 @@ body {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
   background: #000;
   border: 4px solid rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
   /* for Safari */
   background-clip: padding-box;
   /* for IE9+, Firefox 4+, Opera, Chrome */
-  display: none;
   height: 18px;
+  opacity: 0;
   position: absolute;
   width: 18px;
   z-index: 30;
 }
-/* line 134, ../scss/intro.scss */
+/* line 135, ../scss/intro.scss */
 .map-pin:before {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -131,50 +135,64 @@ body {
   text-indent: -9999px;
   z-index: 32;
 }
-
 /* line 149, ../scss/intro.scss */
+.map-pin.active {
+  opacity: 1;
+}
+
+/* line 154, ../scss/intro.scss */
 .map-pin-aceh {
   left: 38px;
   top: 57px;
 }
 
-/* line 154, ../scss/intro.scss */
+/* line 159, ../scss/intro.scss */
 .map-pin-riau {
   left: 153px;
   top: 160px;
 }
 
-/* line 159, ../scss/intro.scss */
+/* line 164, ../scss/intro.scss */
 .map-pin-kalteng {
   left: 467px;
   top: 226px;
 }
 
-/* line 164, ../scss/intro.scss */
+/* line 169, ../scss/intro.scss */
 .map-pin-papua {
   left: 975px;
   top: 212px;
 }
 
-/* line 169, ../scss/intro.scss */
+/* line 174, ../scss/intro.scss */
 .pin-line {
+  -moz-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
   background: #000;
-  display: none;
-  height: 90px;
+  height: 0;
   left: 7px;
   position: absolute;
   top: -80px;
   width: 4px;
   z-index: 31;
 }
+/* line 184, ../scss/intro.scss */
+.map-pin.active .pin-line {
+  height: 90px;
+}
 
-/* line 180, ../scss/intro.scss */
+/* line 189, ../scss/intro.scss */
 .pin-text {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  -moz-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
   background: #000;
-  display: none;
   font-family: "Alegreya Sans SC", sans-serif;
   padding: 8px 10px;
   position: absolute;
@@ -182,36 +200,36 @@ body {
   top: -114px;
   white-space: nowrap;
 }
-/* line 191, ../scss/intro.scss */
+/* line 200, ../scss/intro.scss */
 .pin-text a {
   color: #F44336;
   text-decoration: none;
 }
-/* line 196, ../scss/intro.scss */
+/* line 205, ../scss/intro.scss */
 .map-pin-aceh .pin-text {
   left: -16px;
 }
-/* line 200, ../scss/intro.scss */
+/* line 209, ../scss/intro.scss */
 .map-pin-riau .pin-text {
   left: -36px;
 }
-/* line 204, ../scss/intro.scss */
+/* line 213, ../scss/intro.scss */
 .map-pin-kalteng .pin-text {
   left: -27px;
 }
-/* line 208, ../scss/intro.scss */
+/* line 217, ../scss/intro.scss */
 .map-pin-papua .pin-text {
   left: -22px;
 }
 
-/* line 215, ../scss/intro.scss */
+/* line 224, ../scss/intro.scss */
 .intro-summary {
   color: white;
   margin: 30px auto 0;
   width: 750px;
 }
 
-/* line 221, ../scss/intro.scss */
+/* line 230, ../scss/intro.scss */
 .summary-date {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 20px;
@@ -219,7 +237,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 228, ../scss/intro.scss */
+/* line 237, ../scss/intro.scss */
 .summary-heading {
   font-family: "Alegreya", serif;
   font-style: italic;
@@ -228,7 +246,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 236, ../scss/intro.scss */
+/* line 245, ../scss/intro.scss */
 .summary-text {
   font-family: "Alegreya", serif;
   font-size: 26px;
@@ -237,7 +255,7 @@ body {
   margin: 0;
 }
 
-/* line 245, ../scss/intro.scss */
+/* line 254, ../scss/intro.scss */
 .typed-cursor {
   font-size: 26px;
   opacity: 1;
