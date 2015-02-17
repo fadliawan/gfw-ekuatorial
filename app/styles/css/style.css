@@ -1995,100 +1995,105 @@ select {
 }
 
 /* line 48, ../scss/_page.scss */
+.full-bleed-image {
+  text-align: center;
+}
+
+/* line 52, ../scss/_page.scss */
 .block-quote {
   border-left: 4px solid #000;
   margin-left: 0;
   padding-left: 20px;
   width: 656px;
 }
-/* line 54, ../scss/_page.scss */
+/* line 58, ../scss/_page.scss */
 .block-quote:before {
   content: "\201C";
 }
-/* line 58, ../scss/_page.scss */
+/* line 62, ../scss/_page.scss */
 .block-quote:after {
   content: "\201D";
 }
 
-/* line 63, ../scss/_page.scss */
+/* line 67, ../scss/_page.scss */
 .image-caption, .landscape-image__caption, .portrait-image__caption {
   margin: 10px auto 0;
   width: 800px;
 }
 
-/* line 68, ../scss/_page.scss */
+/* line 72, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
 
-/* line 72, ../scss/_page.scss */
+/* line 76, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 76, ../scss/_page.scss */
+/* line 80, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 81, ../scss/_page.scss */
+/* line 85, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 86, ../scss/_page.scss */
+/* line 90, ../scss/_page.scss */
 .youtube {
   width: 800px;
 }
 
-/* line 90, ../scss/_page.scss */
+/* line 94, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
   width: 950px;
 }
 
-/* line 96, ../scss/_page.scss */
+/* line 100, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 101, ../scss/_page.scss */
+/* line 105, ../scss/_page.scss */
 .landscape-image__caption {
   float: right;
   margin-top: 350px;
   width: 200px;
 }
 
-/* line 108, ../scss/_page.scss */
+/* line 112, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 113, ../scss/_page.scss */
+/* line 117, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 118, ../scss/_page.scss */
+/* line 122, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 125, ../scss/_page.scss */
+/* line 129, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 131, ../scss/_page.scss */
+/* line 135, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
