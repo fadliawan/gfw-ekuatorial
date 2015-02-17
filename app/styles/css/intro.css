@@ -39,7 +39,7 @@ body {
 
 /* line 44, ../scss/intro.scss */
 .intro-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   min-height: 100%;
   padding-bottom: 80px;
   position: absolute;
