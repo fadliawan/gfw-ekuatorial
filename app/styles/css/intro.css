@@ -65,18 +65,26 @@ body {
 }
 
 /* line 69, ../scss/intro.scss */
-.intro-heading h1 {
+.intro-heading h1,
+.intro-heading h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
   letter-spacing: 5px;
   line-height: 60px;
-  margin: 30px 0 35px;
+  margin: 5px 0 40px;
   text-align: center;
   text-transform: uppercase;
 }
+/* line 81, ../scss/intro.scss */
+.intro-heading h2 {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  margin: 30px 0 5px;
+}
 
-/* line 83, ../scss/intro.scss */
+/* line 91, ../scss/intro.scss */
 .intro-maps {
   height: 484px;
   margin: 0 auto 0;
@@ -84,7 +92,7 @@ body {
   width: 1202px;
 }
 
-/* line 90, ../scss/intro.scss */
+/* line 98, ../scss/intro.scss */
 .map-indonesia, .map-aceh, .map-riau, .map-kalteng, .map-papua {
   display: none;
   position: absolute;
@@ -93,13 +101,13 @@ body {
   z-index: 20;
 }
 
-/* line 98, ../scss/intro.scss */
+/* line 106, ../scss/intro.scss */
 .map-indonesia {
   display: block;
   z-index: 10;
 }
 
-/* line 122, ../scss/intro.scss */
+/* line 130, ../scss/intro.scss */
 .map-pin {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -120,7 +128,7 @@ body {
   width: 18px;
   z-index: 30;
 }
-/* line 136, ../scss/intro.scss */
+/* line 144, ../scss/intro.scss */
 .map-pin:before {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -136,36 +144,36 @@ body {
   text-indent: -9999px;
   z-index: 32;
 }
-/* line 150, ../scss/intro.scss */
+/* line 158, ../scss/intro.scss */
 .map-pin.active {
   opacity: 1;
 }
 
-/* line 155, ../scss/intro.scss */
+/* line 163, ../scss/intro.scss */
 .map-pin-aceh {
   left: 38px;
   top: 57px;
 }
 
-/* line 160, ../scss/intro.scss */
+/* line 168, ../scss/intro.scss */
 .map-pin-riau {
   left: 153px;
   top: 160px;
 }
 
-/* line 165, ../scss/intro.scss */
+/* line 173, ../scss/intro.scss */
 .map-pin-kalteng {
   left: 467px;
   top: 226px;
 }
 
-/* line 170, ../scss/intro.scss */
+/* line 178, ../scss/intro.scss */
 .map-pin-papua {
   left: 975px;
   top: 212px;
 }
 
-/* line 175, ../scss/intro.scss */
+/* line 183, ../scss/intro.scss */
 .pin-line {
   -moz-transition: height 0.3s;
   -o-transition: height 0.3s;
@@ -179,12 +187,12 @@ body {
   width: 4px;
   z-index: 31;
 }
-/* line 185, ../scss/intro.scss */
+/* line 193, ../scss/intro.scss */
 .map-pin.active .pin-line {
   height: 90px;
 }
 
-/* line 190, ../scss/intro.scss */
+/* line 198, ../scss/intro.scss */
 .pin-text {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -201,36 +209,36 @@ body {
   top: -114px;
   white-space: nowrap;
 }
-/* line 201, ../scss/intro.scss */
+/* line 209, ../scss/intro.scss */
 .pin-text a {
   color: #F44336;
   text-decoration: none;
 }
-/* line 206, ../scss/intro.scss */
+/* line 214, ../scss/intro.scss */
 .map-pin-aceh .pin-text {
   left: -16px;
 }
-/* line 210, ../scss/intro.scss */
+/* line 218, ../scss/intro.scss */
 .map-pin-riau .pin-text {
   left: -36px;
 }
-/* line 214, ../scss/intro.scss */
+/* line 222, ../scss/intro.scss */
 .map-pin-kalteng .pin-text {
   left: -27px;
 }
-/* line 218, ../scss/intro.scss */
+/* line 226, ../scss/intro.scss */
 .map-pin-papua .pin-text {
   left: -22px;
 }
 
-/* line 225, ../scss/intro.scss */
+/* line 233, ../scss/intro.scss */
 .intro-summary {
   color: white;
   margin: 30px auto 0;
   width: 750px;
 }
 
-/* line 231, ../scss/intro.scss */
+/* line 239, ../scss/intro.scss */
 .summary-date {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 20px;
@@ -238,7 +246,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 238, ../scss/intro.scss */
+/* line 246, ../scss/intro.scss */
 .summary-heading {
   font-family: "Alegreya", serif;
   font-style: italic;
@@ -247,7 +255,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 246, ../scss/intro.scss */
+/* line 254, ../scss/intro.scss */
 .summary-text {
   font-family: "Alegreya", serif;
   font-size: 26px;
@@ -256,7 +264,7 @@ body {
   margin: 0;
 }
 
-/* line 255, ../scss/intro.scss */
+/* line 263, ../scss/intro.scss */
 .typed-cursor {
   font-size: 26px;
   opacity: 1;

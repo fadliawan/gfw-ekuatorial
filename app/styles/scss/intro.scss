@@ -66,15 +66,23 @@ body {
 }
 
 .intro-heading {
-  h1 {
+  h1,
+  h2 {
     color: white;
     font-family: $montserrat;
     font-size: 60px;
     letter-spacing: 5px;
     line-height: 60px;
-    margin: 30px 0 35px;
+    margin: 5px 0 40px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 28px;
+    color: rgba(255, 255, 255, .5);
+    letter-spacing: 2px;
+    margin: 30px 0 5px;
   }
 }
 
