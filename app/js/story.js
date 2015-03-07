@@ -4,7 +4,7 @@
 
   $('.js-image-carousel').jCarouselLite({
     auto: true,
-    timeout: 10*1000,
+    timeout: 5*1000,
     responsive: true
   });
 
