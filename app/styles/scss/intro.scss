@@ -193,6 +193,7 @@ body {
 
 .pin-line {
   @include transition(all .3s);
+  @include scale(0);
   background: #000;
   height: 0;
   left: 7px;
@@ -202,6 +203,7 @@ body {
   z-index: 31;
 
   .map-pin.active & {
+    @include scale(1);
     height: 90px;
     width: 4px;
   }
@@ -222,6 +224,7 @@ body {
 .pin-text {
   @include border-radius(5px);
   @include transition(all .3s);
+  @include scale(0);
   background: $pitch-black;
   font-family: $alegreya-sans-sc;
   opacity: 0;
@@ -232,6 +235,7 @@ body {
   white-space: nowrap;
 
   .map-pin.active & {
+    @include scale(1);
     opacity: 1;
   }
 
