@@ -2052,48 +2052,50 @@ select {
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
   width: 950px;
 }
 
-/* line 100, ../scss/_page.scss */
+/* line 101, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 105, ../scss/_page.scss */
+/* line 106, ../scss/_page.scss */
 .landscape-image__caption {
-  float: right;
-  margin-top: 350px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
   width: 200px;
 }
 
-/* line 112, ../scss/_page.scss */
+/* line 114, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 117, ../scss/_page.scss */
+/* line 119, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 122, ../scss/_page.scss */
+/* line 124, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 129, ../scss/_page.scss */
+/* line 131, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 135, ../scss/_page.scss */
+/* line 137, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;

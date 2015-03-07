@@ -94,6 +94,7 @@
 .landscape-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
   width: 950px;
 }
 
@@ -104,8 +105,9 @@
 
 .landscape-image__caption {
   @extend .image-caption;
-  float: right;
-  margin-top: 350px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
   width: 200px;
 }
 
