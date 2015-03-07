@@ -1,5 +1,12 @@
 /* PAGE */
 
+@import "carousel";
+
+.page-article {
+  overflow: hidden;
+  width: 100%;
+}
+
 .main-heading {
   margin: 60px 0 35px;
 }
@@ -45,10 +52,6 @@
   }
 }
 
-.full-bleed-image {
-  text-align: center;
-}
-
 .block-quote {
   border-left: 4px solid $pitch-black;
   margin-left: 0;
@@ -67,6 +70,10 @@
 .image-caption {
   margin: 10px auto 0;
   width: 800px;
+
+  .full-bleed-image & {
+    margin: 10px 20px 0;
+  }
 }
 
 .image-caption__em {
@@ -88,6 +95,7 @@
 }
 
 .youtube {
+  padding-top: 30px;
   width: 800px;
 }
 

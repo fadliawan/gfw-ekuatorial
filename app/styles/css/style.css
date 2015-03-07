@@ -1942,22 +1942,34 @@ select {
 }
 
 /* PAGE */
-/* line 3, ../scss/_page.scss */
+/* CAROUSEL */
+/* line 3, ../scss/_carousel.scss */
+.image-carousel {
+  overflow: hidden;
+}
+
+/* line 5, ../scss/_page.scss */
+.page-article {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 10, ../scss/_page.scss */
 .main-heading {
   margin: 60px 0 35px;
 }
 
-/* line 7, ../scss/_page.scss */
+/* line 14, ../scss/_page.scss */
 .secondary-heading {
   border-top: 2px solid #E0E0E0;
   padding-top: 35px;
 }
 
-/* line 12, ../scss/_page.scss */
+/* line 19, ../scss/_page.scss */
 .small-heading {
   margin-top: 74px;
 }
-/* line 15, ../scss/_page.scss */
+/* line 22, ../scss/_page.scss */
 .small-heading:after {
   border-top: 1px solid #000;
   content: ".";
@@ -1969,86 +1981,86 @@ select {
   width: 100px;
 }
 
-/* line 27, ../scss/_page.scss */
+/* line 34, ../scss/_page.scss */
 .editors {
   margin: 0 0 40px;
 }
 
-/* line 31, ../scss/_page.scss */
+/* line 38, ../scss/_page.scss */
 .writing {
   width: 800px;
 }
 
-/* line 35, ../scss/_page.scss */
+/* line 42, ../scss/_page.scss */
 .writing--character {
   overflow: hidden;
 }
 
-/* line 39, ../scss/_page.scss */
+/* line 46, ../scss/_page.scss */
 .writing-p {
   width: 680px;
 }
-/* line 42, ../scss/_page.scss */
+/* line 49, ../scss/_page.scss */
 .writing--character .writing-p {
   float: left;
   width: 560px;
 }
 
-/* line 48, ../scss/_page.scss */
-.full-bleed-image {
-  text-align: center;
-}
-
-/* line 52, ../scss/_page.scss */
+/* line 55, ../scss/_page.scss */
 .block-quote {
   border-left: 4px solid #000;
   margin-left: 0;
   padding-left: 20px;
   width: 656px;
 }
-/* line 58, ../scss/_page.scss */
+/* line 61, ../scss/_page.scss */
 .block-quote:before {
   content: "\201C";
 }
-/* line 62, ../scss/_page.scss */
+/* line 65, ../scss/_page.scss */
 .block-quote:after {
   content: "\201D";
 }
 
-/* line 67, ../scss/_page.scss */
+/* line 70, ../scss/_page.scss */
 .image-caption, .landscape-image__caption, .portrait-image__caption {
   margin: 10px auto 0;
   width: 800px;
 }
+/* line 74, ../scss/_page.scss */
+.full-bleed-image .image-caption, .full-bleed-image .landscape-image__caption, .full-bleed-image .portrait-image__caption {
+  margin: 10px 20px 0;
+}
 
-/* line 72, ../scss/_page.scss */
+/* line 79, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
 
-/* line 76, ../scss/_page.scss */
+/* line 83, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 80, ../scss/_page.scss */
+/* line 87, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 85, ../scss/_page.scss */
+/* line 92, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 90, ../scss/_page.scss */
+/* line 97, ../scss/_page.scss */
 .youtube {
+  padding-top: 30px;
   width: 800px;
 }
 
-/* line 94, ../scss/_page.scss */
+/* line 102, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -2056,13 +2068,13 @@ select {
   width: 950px;
 }
 
-/* line 101, ../scss/_page.scss */
+/* line 109, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 106, ../scss/_page.scss */
+/* line 114, ../scss/_page.scss */
 .landscape-image__caption {
   bottom: 0;
   position: absolute;
@@ -2070,32 +2082,32 @@ select {
   width: 200px;
 }
 
-/* line 114, ../scss/_page.scss */
+/* line 122, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 119, ../scss/_page.scss */
+/* line 127, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 124, ../scss/_page.scss */
+/* line 132, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 131, ../scss/_page.scss */
+/* line 139, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 137, ../scss/_page.scss */
+/* line 145, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;

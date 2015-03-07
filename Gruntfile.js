@@ -26,7 +26,8 @@ module.exports = function(grunt) {
                 },
                 files: [
                     'app/*.html',
-                    'app/styles/scss/{,*/}*.scss'
+                    'app/styles/scss/{,*/}*.scss',
+                    'app/js/{,*/}*.js'
                 ]
             },
             compass: {
