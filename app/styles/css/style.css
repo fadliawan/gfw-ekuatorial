@@ -1686,12 +1686,12 @@ select {
 /* VARIABLES */
 /* MIXINS */
 /* line 3, ../scss/_mixins.scss */
-.writing-p a, .footer-p a, .documents__title a, .documents__actions a {
+.writing-p a, .writing-heading a, .footer-p a, .documents__title a, .documents__actions a {
   color: #B71C1C;
   text-decoration: none;
 }
 /* line 7, ../scss/_mixins.scss */
-.writing-p a:hover, .footer-p a:hover, .documents__title a:hover, .documents__actions a:hover {
+.writing-p a:hover, .writing-heading a:hover, .footer-p a:hover, .documents__title a:hover, .documents__actions a:hover {
   text-decoration: underline;
 }
 
@@ -1763,7 +1763,7 @@ select {
 }
 
 /* line 62, ../scss/_typography.scss */
-.writing-p {
+.writing-p, .writing-heading {
   color: #424242;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 22px;
@@ -1772,6 +1772,11 @@ select {
 }
 
 /* line 74, ../scss/_typography.scss */
+.writing-heading {
+  text-transform: uppercase;
+}
+
+/* line 79, ../scss/_typography.scss */
 .block-quote {
   color: #424242;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -1780,7 +1785,7 @@ select {
   line-height: 24px;
 }
 
-/* line 82, ../scss/_typography.scss */
+/* line 87, ../scss/_typography.scss */
 .character {
   color: #424242;
   font-size: 16px;
@@ -1789,23 +1794,23 @@ select {
   text-align: center;
 }
 
-/* line 90, ../scss/_typography.scss */
+/* line 95, ../scss/_typography.scss */
 .character__name {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
-/* line 94, ../scss/_typography.scss */
+/* line 99, ../scss/_typography.scss */
 .character__title {
   font-family: "Alegreya", serif;
 }
 
-/* line 98, ../scss/_typography.scss */
+/* line 103, ../scss/_typography.scss */
 .page-footer {
   color: #424242;
   font-weight: 400;
 }
 
-/* line 103, ../scss/_typography.scss */
+/* line 108, ../scss/_typography.scss */
 .footer-heading {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 20px;
@@ -1813,7 +1818,7 @@ select {
   text-align: center;
 }
 
-/* line 110, ../scss/_typography.scss */
+/* line 115, ../scss/_typography.scss */
 .footer-p, .documents__title {
   font-family: "Alegreya", serif;
   font-size: 18px;
@@ -1821,7 +1826,7 @@ select {
   line-height: 24px;
 }
 
-/* line 125, ../scss/_typography.scss */
+/* line 130, ../scss/_typography.scss */
 .documents__actions {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
@@ -1997,11 +2002,11 @@ select {
 }
 
 /* line 46, ../scss/_page.scss */
-.writing-p {
+.writing-p, .writing-heading {
   width: 680px;
 }
 /* line 49, ../scss/_page.scss */
-.writing--character .writing-p {
+.writing--character .writing-p, .writing--character .writing-heading {
   float: left;
   width: 560px;
 }

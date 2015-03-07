@@ -71,6 +71,11 @@
   }
 }
 
+.writing-heading {
+  @extend .writing-p;
+  text-transform: uppercase;
+}
+
 .block-quote {
   color: $dark-grey;
   font-family: $alegreya-sans-sc;
