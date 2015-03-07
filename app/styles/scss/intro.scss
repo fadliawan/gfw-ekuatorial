@@ -127,16 +127,26 @@ body {
 
 /// Pins ///
 
+@include keyframes(pin-anim) {
+  0% {
+    @include scale(0.2);
+  }
+  20% {
+    @include scale(1);
+  }
+}
+
 .map-pin {
   @include border-radius(100px);
-  @include transition(opacity .3s);
+  @include transition(all .3s);
+  @include animation(pin-anim 2s linear 0s infinite);
   background: $pitch-black;
   border: 4px solid rgba(0, 0, 0, .5);
   // Required for transparent border with opaque background color
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   height: 18px;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   width: 18px;
   z-index: 30;
@@ -156,6 +166,7 @@ body {
   }
 
   &.active {
+    @include animation(none);
     opacity: 1;
   }
 }
@@ -210,14 +221,19 @@ body {
 
 .pin-text {
   @include border-radius(5px);
-  @include transition(height .3s);
+  @include transition(all .3s);
   background: $pitch-black;
   font-family: $alegreya-sans-sc;
+  opacity: 0;
   padding: 8px 10px;
   position: absolute;
   text-align: center;
   top: -114px;
   white-space: nowrap;
+
+  .map-pin.active & {
+    opacity: 1;
+  }
 
   &.pin-text--hz {
     top: -8px;
