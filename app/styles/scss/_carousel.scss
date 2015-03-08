@@ -3,6 +3,7 @@
 .image-carousel {
 	margin: 0 auto;
 	overflow: hidden;
+  position: relative;
 	width: 800px;
 
 	> div {
@@ -34,4 +35,27 @@
 			}
 		}
 	}
+}
+
+.carousel-arrow {
+  @include transition(all .2s);
+  @include user-select(none);
+  color: rgba(255, 255, 255, .4);
+  cursor: pointer;
+  font-size: 100px;
+  position: absolute;
+  top: 150px;
+  z-index: 100;
+
+  &:hover {
+    color: rgba(255, 255, 255, .8);
+  }
+}
+
+.carousel-arrow--prev {
+  left: 10px;
+}
+
+.carousel-arrow--next {
+  right: 10px;
 }

@@ -6,7 +6,9 @@
   .jCarouselLite({
     autoCSS: false,
     auto: true,
-    timeout: 5*1000
+    timeout: 5*1000,
+    btnNext: '.js-carousel-arrow--next',
+    btnPrev: '.js-carousel-arrow--prev'
   })
   .on('mouseenter', function() {
     $(this).trigger('pauseCarousel');

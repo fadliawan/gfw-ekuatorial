@@ -1952,9 +1952,10 @@ select {
 .image-carousel {
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
   width: 800px;
 }
-/* line 8, ../scss/_carousel.scss */
+/* line 9, ../scss/_carousel.scss */
 .image-carousel > div {
   visibility: visible;
   position: relative;
@@ -1963,7 +1964,7 @@ select {
   width: 800px;
   /* calculated: width of the first li * number of visible items */
 }
-/* line 15, ../scss/_carousel.scss */
+/* line 16, ../scss/_carousel.scss */
 .image-carousel > div > ul {
   margin: 0;
   padding: 0;
@@ -1977,7 +1978,7 @@ select {
   /* if the vertical option is set to true, the following would be margin-top */
   margin-left: -800px;
 }
-/* line 29, ../scss/_carousel.scss */
+/* line 30, ../scss/_carousel.scss */
 .image-carousel > div > ul > li {
   overflow: visible;
   float: left;
@@ -1985,6 +1986,38 @@ select {
   /*calculated: width of the first li */
   height: 600px;
   /*calculated: height of the first li */
+}
+
+/* line 40, ../scss/_carousel.scss */
+.carousel-arrow {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-size: 100px;
+  position: absolute;
+  top: 150px;
+  z-index: 100;
+}
+/* line 50, ../scss/_carousel.scss */
+.carousel-arrow:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 55, ../scss/_carousel.scss */
+.carousel-arrow--prev {
+  left: 10px;
+}
+
+/* line 59, ../scss/_carousel.scss */
+.carousel-arrow--next {
+  right: 10px;
 }
 
 /* line 5, ../scss/_page.scss */
