@@ -1992,6 +1992,25 @@ select {
 }
 
 /* line 40, ../scss/_carousel.scss */
+.image-carousel--full-bleed {
+  width: 100%;
+}
+/* line 43, ../scss/_carousel.scss */
+.image-carousel--full-bleed > div {
+  width: 100%;
+}
+/* line 46, ../scss/_carousel.scss */
+.image-carousel--full-bleed > div > ul {
+  margin-left: -100%;
+  width: 1000%;
+}
+/* line 50, ../scss/_carousel.scss */
+.image-carousel--full-bleed > div > ul > li {
+  width: 10%;
+  height: auto;
+}
+
+/* line 58, ../scss/_carousel.scss */
 .carousel-arrow {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -2008,17 +2027,22 @@ select {
   top: 150px;
   z-index: 100;
 }
-/* line 50, ../scss/_carousel.scss */
+/* line 68, ../scss/_carousel.scss */
 .carousel-arrow:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+/* line 72, ../scss/_carousel.scss */
+.image-carousel--full-bleed .carousel-arrow {
+  margin-top: 20%;
+  top: 0;
+}
 
-/* line 55, ../scss/_carousel.scss */
+/* line 78, ../scss/_carousel.scss */
 .carousel-arrow--prev {
   left: 10px;
 }
 
-/* line 59, ../scss/_carousel.scss */
+/* line 82, ../scss/_carousel.scss */
 .carousel-arrow--next {
   right: 10px;
 }

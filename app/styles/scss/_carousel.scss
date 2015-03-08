@@ -37,6 +37,24 @@
 	}
 }
 
+.image-carousel--full-bleed {
+  width: 100%;
+
+  > div {
+    width: 100%;
+
+    > ul {
+      margin-left: -100%;
+      width: 1000%;
+
+      > li {
+        width: 10%;
+        height: auto;
+      }
+    }
+  }
+}
+
 .carousel-arrow {
   @include transition(all .2s);
   @include user-select(none);
@@ -49,6 +67,11 @@
 
   &:hover {
     color: rgba(255, 255, 255, .8);
+  }
+
+  .image-carousel--full-bleed & {
+    margin-top: 20%;
+    top: 0;
   }
 }
 
