@@ -11,7 +11,7 @@
 	  position: relative;
 	  z-index: 2;
 	  /* if the vertical option is set to true, the following would be height */
-	  width: 800px; /* calculated: width of the first li * number of visible items */;
+	  width: 800px; /* calculated: width of the first li * number of visible items */
 
 	  > ul {
 		  margin: 0;
@@ -22,14 +22,14 @@
 
 		  /* if the vertical option is set to true, the following would be height */
 		  /* can be any number larger than total combined width of list items */
-		  width: 8000px; /* calculated: width of the first li * total number of list items */;
+		  width: 8000px; /* calculated: width of the first li * total number of list items */
 
 		  /* if the vertical option is set to true, the following would be margin-top */
-		  margin-left: -800px /* calculdated: -starting item * width of first li */;
+		  margin-left: -800px; /* calculdated: -starting item * width of first li */
 
 		  > li {
-			  overflow: visible /* if vertical: true, overflow is hidden */;
-			  float: left /* if vertical: true, float is none */;
+			  overflow: visible; /* if vertical: true, overflow is hidden */
+			  float: left; /* if vertical: true, float is none */
 			  width: 800px; /*calculated: width of the first li */
 			  height: 600px; /*calculated: height of the first li */
 			}

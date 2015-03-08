@@ -1977,11 +1977,14 @@ select {
   /* calculated: width of the first li * total number of list items */
   /* if the vertical option is set to true, the following would be margin-top */
   margin-left: -800px;
+  /* calculdated: -starting item * width of first li */
 }
 /* line 30, ../scss/_carousel.scss */
 .image-carousel > div > ul > li {
   overflow: visible;
+  /* if vertical: true, overflow is hidden */
   float: left;
+  /* if vertical: true, float is none */
   width: 800px;
   /*calculated: width of the first li */
   height: 600px;
