@@ -1950,7 +1950,41 @@ select {
 /* CAROUSEL */
 /* line 3, ../scss/_carousel.scss */
 .image-carousel {
+  margin: 0 auto;
   overflow: hidden;
+  width: 800px;
+}
+/* line 8, ../scss/_carousel.scss */
+.image-carousel > div {
+  visibility: visible;
+  position: relative;
+  z-index: 2;
+  /* if the vertical option is set to true, the following would be height */
+  width: 800px;
+  /* calculated: width of the first li * number of visible items */
+}
+/* line 15, ../scss/_carousel.scss */
+.image-carousel > div > ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+  z-index: 1;
+  /* if the vertical option is set to true, the following would be height */
+  /* can be any number larger than total combined width of list items */
+  width: 8000px;
+  /* calculated: width of the first li * total number of list items */
+  /* if the vertical option is set to true, the following would be margin-top */
+  margin-left: -800px;
+}
+/* line 29, ../scss/_carousel.scss */
+.image-carousel > div > ul > li {
+  overflow: visible;
+  float: left;
+  width: 800px;
+  /*calculated: width of the first li */
+  height: 600px;
+  /*calculated: height of the first li */
 }
 
 /* line 5, ../scss/_page.scss */
@@ -2041,35 +2075,39 @@ select {
 .image-caption__em {
   color: #B71C1C;
 }
+/* line 82, ../scss/_page.scss */
+.image-caption__em a {
+  color: #B71C1C;
+}
 
-/* line 83, ../scss/_page.scss */
+/* line 87, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 87, ../scss/_page.scss */
+/* line 91, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 92, ../scss/_page.scss */
+/* line 96, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 97, ../scss/_page.scss */
+/* line 101, ../scss/_page.scss */
 .youtube {
   width: 800px;
 }
 
-/* line 101, ../scss/_page.scss */
+/* line 105, ../scss/_page.scss */
 .image-wrapper {
   width: 800px;
 }
 
-/* line 105, ../scss/_page.scss */
+/* line 109, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -2077,13 +2115,13 @@ select {
   width: 950px;
 }
 
-/* line 112, ../scss/_page.scss */
+/* line 116, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 117, ../scss/_page.scss */
+/* line 121, ../scss/_page.scss */
 .landscape-image__caption {
   bottom: 0;
   position: absolute;
@@ -2091,32 +2129,32 @@ select {
   width: 200px;
 }
 
-/* line 125, ../scss/_page.scss */
+/* line 129, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 130, ../scss/_page.scss */
+/* line 134, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 135, ../scss/_page.scss */
+/* line 139, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 142, ../scss/_page.scss */
+/* line 146, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 148, ../scss/_page.scss */
+/* line 152, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
