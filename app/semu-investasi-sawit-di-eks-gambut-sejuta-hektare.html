@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
+  <!-- BEGIN: Facebook JS SDK -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- END: Facebook JS SDK -->
+
   <div class="page-container">
 
     <header class="page-header">
@@ -32,7 +43,22 @@
             </div>
           </div>
           <div class="small-12 medium-4 columns">
-            <div style="float: right; margin-top: 25px">Social widgets will be here.</div>
+            <div style="float: left; margin: 10px 20px 0 0;">
+              <div class="fb-like" data-href="http://multimedia.ekuatorial.com/" data-layout="box_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
+            </div>
+            <div style="float: left; margin: 10px 0 0;">
+              <a class="twitter-share-button"
+                href="https://twitter.com/share"
+                rel="canonical"
+                data-url="http://multimedia.ekuatorial.com/"
+                data-count="vertical"
+                data-via="ekuatorialmap">
+                Tweet
+              </a>
+              <script>
+              window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+              </script>
+            </div>
           </div>
         </div>
       </div>

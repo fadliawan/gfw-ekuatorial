@@ -8,7 +8,7 @@ $header-logo-height: 50px;
 }
 
 .topbar {
-  overflow: hidden;
+  overflow: visible;
 
   @media #{$medium} {
     height: 80px;
