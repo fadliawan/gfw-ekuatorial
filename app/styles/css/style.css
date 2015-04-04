@@ -2160,16 +2160,17 @@ select {
 
 /* line 101, ../scss/_page.scss */
 .youtube,
-.chart {
+.chart,
+.image-regular {
   width: 800px;
 }
 
-/* line 106, ../scss/_page.scss */
+/* line 107, ../scss/_page.scss */
 .image-wrapper {
   width: 800px;
 }
 
-/* line 110, ../scss/_page.scss */
+/* line 111, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -2177,13 +2178,13 @@ select {
   width: 950px;
 }
 
-/* line 117, ../scss/_page.scss */
+/* line 118, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 122, ../scss/_page.scss */
+/* line 123, ../scss/_page.scss */
 .landscape-image__caption {
   bottom: 0;
   position: absolute;
@@ -2191,32 +2192,32 @@ select {
   width: 200px;
 }
 
-/* line 130, ../scss/_page.scss */
+/* line 131, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 135, ../scss/_page.scss */
+/* line 136, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 140, ../scss/_page.scss */
+/* line 141, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 147, ../scss/_page.scss */
+/* line 148, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 153, ../scss/_page.scss */
+/* line 154, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
