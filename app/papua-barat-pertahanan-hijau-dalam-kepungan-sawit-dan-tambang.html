@@ -206,11 +206,11 @@
 
         <section class="writing row">
           <p class="writing-p">
-            Selain itu, kebijakan percepatan ekonomi yang lebih dikenal dengan MP3EI juga memuat tugas bagi tiap-tiap provinsi untuk menghasilkan barang komoditas tambang, perkebunan, dan pertanian.
+            Selain itu, kebijakan percepatan ekonomi yang lebih dikenal dengan <a href="http://www.kemlu.go.id/rome/Documents/MP3EI_PDF.pdf" target="_blank">MP3EI</a> juga memuat tugas bagi tiap-tiap provinsi untuk menghasilkan barang komoditas tambang, perkebunan, dan pertanian.
           </p>
 
           <p class="writing-p">
-            Melalui PP Nomor 32/2011, MP3EI diluncurkan oleh pemerintah pada tahun 2011 dan diproyeksikan untuk tahun 2025. Di satu sisi, pemerintah mengeluarkan kebijakan untuk melindungi hutan. Namun, di sisi lain mereka juga mengeluarkan kebijakan untuk pemanfaatan hutan dalam skala besar. Konflik kebijakan ini akhirnya dimanfaatkan untuk membuka hutan alam di Papua.
+            Melalui <a href="http://sipuu.setkab.go.id/PUUdoc/17180/Perpres0322011_2.htm" target="_blank">PP Nomor 32/2011</a>, MP3EI diluncurkan oleh pemerintah pada tahun 2011 dan diproyeksikan untuk tahun 2025. Di satu sisi, pemerintah mengeluarkan kebijakan untuk melindungi hutan. Namun, di sisi lain mereka juga mengeluarkan kebijakan untuk pemanfaatan hutan dalam skala besar. Konflik kebijakan ini akhirnya dimanfaatkan untuk membuka hutan alam di Papua.
           </p>
 
           <p class="writing-p">
@@ -354,6 +354,63 @@
           </p>
         </section>
 
+        <section class="image-carousel">
+          <div class="js-image-carousel">
+            <ul>
+              <li>
+                <section class="image-wrapper row">
+                  <img src="images/photo-slide-01-keanekaragaman-hayati-papua.jpg" alt="Keanegaragaman hayati Papua">
+
+                  <div class="row">
+                    <p class="image-caption">
+                      Keanekaragaman hayati Papua. Sumber: Dokumentasi LIPI.
+                    </p>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="image-wrapper row">
+                  <img src="images/photo-slide-02-keanekaragaman-hayati-laut.jpg" alt="Keanekaragaman hayati bawah laut Papua">
+
+                  <div class="row">
+                    <p class="image-caption">
+                      Keanekaragaman hayati bawah laut Papua. Sumber: Dokumentasi LIPI.
+                    </p>
+                  </div>
+                </section>
+              </li>
+            </ul>
+            <div class="carousel-arrow carousel-arrow--prev js-carousel-arrow--prev">&laquo;</div>
+            <div class="carousel-arrow carousel-arrow--next js-carousel-arrow--next">&raquo;</div>
+          </div>
+        </section>
+
+        <section class="writing row">
+          <p class="writing-p">
+            Gono menambahkan bahwa tim peneliti pun sudah mengajukan rekomendasi terkait dengan potensi kawasan Kaimana, khususnya penetapan zonasi daerah laut dan pembangkit listrik tenaga sungai.
+          </p>
+
+          <p class="writing-p">
+            “Sudah ada wilayah tertutup yang meskipun begitu indah lebih baik untuk penelitian karena terlalu sensitif untuk tingkat kerusakan. Itu di Pulau Nusa Ulan,” kata Gono. “Ada yang 80 persen menyerupai Nusa Ulan, yaitu Pulau Agi yang menyerupai [bisa sebagai daerah ekowisata].”
+          </p>
+
+          <p class="writing-p">
+            Ia menambahkan bahwa dari semua wilayah kerja tim peneliti, baru Gunung Kumawa yang merupakan daerah dilindungi, yaitu cagar alam. Sementara itu, kawasan perairan masih belum dikenakan sistem zonasi.
+          </p>
+
+          <p class="writing-p">
+            Untuk pembangkit listrik tenaga air, Gono mengatakan perlu adanya penelitian lebih lanjut dan mendalam. Meski demikian, ia menggambarkan bahwa karakteristik sungai yang ada di daerah tersebut
+          </p>
+
+          <p class="writing-p">
+            “Tidak lagi bangun konstruksi bangunan. Kalau lihat gambar, seperti punya kipas angin, cemplungin ke air, tinggal ada turbin dan sambungkan ke kabel. Jadi tidak perlu konstruksi beton, sangat minimal,” jelasnya. “Ini yang dicoba dilihat karena teknologi baru, ini inovatif karena setiap ada pembangunan listrik ada penutupan akses masyarakat.”
+          </p>
+
+          <p class="writing-p">
+            Meski bukan domain mereka, Gono mengatakan bahwa mereka berupaya memberikan kontribusi kepada mereka, seperti mencari air bersih. “Kami di Biologi jadi kami melihat itu hanya tambahan, jadi bisa saling menguntungkan antara terjaganya kehidupan liar dan masyarakat dapat apa,” katanya menambahkan bahwa mereka mencari partner penelitian untuk teknologi tepat guna air bersih.
+          </p>
+        </section>
+
       </article>
     </div>
 
@@ -392,7 +449,6 @@
   <script src="components/Chart.js/Chart.min.js"></script>
   <script>
     var $canvas = $('#chart__forest-management');
-
     var ctx = $canvas.get(0).getContext('2d');
 
     var data = [
@@ -443,7 +499,6 @@
 
     var chartWaypoint = $canvas.waypoint({
       handler: function() {
-        console.log(chart);
         if (chart !== null) return;
         chart = new Chart(ctx).Doughnut(data, options);
       },
