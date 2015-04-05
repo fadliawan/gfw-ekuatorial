@@ -2107,70 +2107,79 @@ select {
 }
 
 /* line 55, ../scss/_page.scss */
+.writing-break {
+  left: -70px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  position: relative;
+  width: 400px;
+}
+
+/* line 63, ../scss/_page.scss */
 .block-quote {
   border-left: 4px solid #000;
   margin-left: 0;
   padding-left: 20px;
   width: 656px;
 }
-/* line 61, ../scss/_page.scss */
+/* line 69, ../scss/_page.scss */
 .block-quote:before {
   content: "\201C";
 }
-/* line 65, ../scss/_page.scss */
+/* line 73, ../scss/_page.scss */
 .block-quote:after {
   content: "\201D";
 }
 
-/* line 70, ../scss/_page.scss */
+/* line 78, ../scss/_page.scss */
 .image-caption, .landscape-image__caption, .portrait-image__caption {
   margin: 10px auto 0;
   width: 800px;
 }
-/* line 74, ../scss/_page.scss */
+/* line 82, ../scss/_page.scss */
 .full-bleed-image .image-caption, .full-bleed-image .landscape-image__caption, .full-bleed-image .portrait-image__caption {
   margin: 10px 20px 0;
 }
 
-/* line 79, ../scss/_page.scss */
+/* line 87, ../scss/_page.scss */
 .image-caption__em {
   color: #B71C1C;
 }
-/* line 82, ../scss/_page.scss */
+/* line 90, ../scss/_page.scss */
 .image-caption__em a {
   color: #B71C1C;
 }
 
-/* line 87, ../scss/_page.scss */
+/* line 95, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 91, ../scss/_page.scss */
+/* line 99, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 96, ../scss/_page.scss */
+/* line 104, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 101, ../scss/_page.scss */
+/* line 109, ../scss/_page.scss */
 .youtube,
 .chart,
 .image-regular {
   width: 800px;
 }
 
-/* line 107, ../scss/_page.scss */
+/* line 115, ../scss/_page.scss */
 .image-wrapper {
   width: 800px;
 }
 
-/* line 111, ../scss/_page.scss */
+/* line 119, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -2178,13 +2187,13 @@ select {
   width: 950px;
 }
 
-/* line 118, ../scss/_page.scss */
+/* line 126, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 123, ../scss/_page.scss */
+/* line 131, ../scss/_page.scss */
 .landscape-image__caption {
   bottom: 0;
   position: absolute;
@@ -2192,32 +2201,32 @@ select {
   width: 200px;
 }
 
-/* line 131, ../scss/_page.scss */
+/* line 139, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 136, ../scss/_page.scss */
+/* line 144, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 141, ../scss/_page.scss */
+/* line 149, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 148, ../scss/_page.scss */
+/* line 156, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 154, ../scss/_page.scss */
+/* line 162, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
