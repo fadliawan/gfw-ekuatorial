@@ -2220,13 +2220,69 @@ select {
 }
 
 /* line 156, ../scss/_page.scss */
+.slides-with-map {
+  padding-bottom: 50px;
+  width: 800px;
+}
+
+/* line 161, ../scss/_page.scss */
+.swm-control {
+  overflow: hidden;
+}
+
+/* line 165, ../scss/_page.scss */
+.swm-control div {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: red;
+  color: white;
+  cursor: pointer;
+  float: left;
+  font-size: 30px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 5px;
+}
+
+/* line 177, ../scss/_page.scss */
+.swm-text {
+  font-family: "Alegreya Sans", sans-serif;
+  float: left;
+  width: 50%;
+}
+
+/* line 183, ../scss/_page.scss */
+.swm-text__title {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+/* line 188, ../scss/_page.scss */
+.swm-text__body {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+/* line 193, ../scss/_page.scss */
+.swm-map {
+  float: right;
+  width: 50%;
+}
+/* line 197, ../scss/_page.scss */
+.swm-map .mapboxgl-ctrl-attrib {
+  display: none;
+}
+
+/* line 202, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 162, ../scss/_page.scss */
+/* line 208, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;

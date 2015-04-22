@@ -153,6 +153,52 @@
   width: 200px;
 }
 
+.slides-with-map {
+  padding-bottom: 50px;
+  width: 800px;
+}
+
+.swm-control {
+  overflow: hidden;
+}
+
+.swm-control div {
+  @include user-select(none);
+  background: red;
+  color: white;
+  cursor: pointer;
+  float: left;
+  font-size: 30px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.swm-text {
+  font-family: $alegreya-sans;
+  float: left;
+  width: 50%;
+}
+
+.swm-text__title {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.swm-text__body {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.swm-map {
+  float: right;
+  width: 50%;
+
+  .mapboxgl-ctrl-attrib {
+    display: none
+  }
+}
+
 .character {
   float: right;
   margin-top: 40px;

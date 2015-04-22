@@ -11,6 +11,10 @@
 
   <link href='http://fonts.googleapis.com/css?family=Francois+One|Alegreya+Sans+SC|Alegreya:400,400italic,700|Alegreya+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/css/style.css">
+
+  <!-- Mapbox GL -->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.6.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.6.0/mapbox-gl.js'></script>
 </head>
 <body>
   <!-- BEGIN: Facebook JS SDK -->
@@ -85,6 +89,26 @@
           <h3 class="subtitle-heading">
             Perkebunan sawit skala besar membeli tanah-tanah garapan di bekas Pengembangan Gambut Sejuta Hektare —proyek pangan era Orde Baru.
           </h3>
+        </section>
+
+        <section class="slides-with-map row">
+          <div class="swm-slides">
+            <video autoplay loop class="js-swm-video">
+              <source class="vid_src_webm" src="videos/Aerial_Palangkaraya_1.webm" type="video/webm">
+              <source class="vid_src_mp4" src="videos/Aerial_Palangkaraya_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="swm-control">
+            <div class="swm-control__prev">&laquo;</div>
+            <div class="swm-control__next">&raquo;</div>
+          </div>
+          <div class="swm-text">
+            <h6 class="swm-text__title">Petak Batuah</h6>
+            <p class="swm-text__body">
+              Permukiman transmigran pada lahan eks program Pengembangan Lahan Gambut di Kabupaten Kapuas, Kalimantan Tengah. Buruknya akses darat untuk menjual panen beras memicu sebagian transmigran menyerah dan berniat mengganti tanamannya dengan sawit.
+            </p>
+          </div>
+          <div class="swm-map" id="swm-map"></div>
         </section>
 
         <section class="timeline">
