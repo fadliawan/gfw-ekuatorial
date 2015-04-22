@@ -3,6 +3,8 @@
 
   "use strict";
 
+  if (!$('.js-image-carousel').length) return;
+
   $('.js-image-carousel')
   .jCarouselLite({
     autoCSS: false,
@@ -46,6 +48,8 @@
 (function($) {
 
   "use strict";
+
+  if (!$('.js-swm-video').length) return;
 
   mapboxgl.accessToken = 'pk.eyJ1IjoiZWt1YXRvcmlhbCIsImEiOiJGM0JvYm9nIn0.u9T-Oicf307a3MwSd5AfqQ';
 
