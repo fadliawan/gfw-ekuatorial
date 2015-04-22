@@ -2151,35 +2151,40 @@ select {
 }
 
 /* line 95, ../scss/_page.scss */
+.full-bleed-image {
+  text-align: center;
+}
+
+/* line 99, ../scss/_page.scss */
 .juxtapose {
   width: 800px;
 }
 
-/* line 99, ../scss/_page.scss */
+/* line 103, ../scss/_page.scss */
 .popcorn-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 104, ../scss/_page.scss */
+/* line 108, ../scss/_page.scss */
 .timeline-wrapper {
   margin: 0 auto;
   width: 950px;
 }
 
-/* line 109, ../scss/_page.scss */
+/* line 113, ../scss/_page.scss */
 .youtube,
 .chart,
 .image-regular {
   width: 800px;
 }
 
-/* line 115, ../scss/_page.scss */
+/* line 119, ../scss/_page.scss */
 .image-wrapper {
   width: 800px;
 }
 
-/* line 119, ../scss/_page.scss */
+/* line 123, ../scss/_page.scss */
 .landscape-image-wrapper, .portrait-image-wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -2187,13 +2192,13 @@ select {
   width: 950px;
 }
 
-/* line 126, ../scss/_page.scss */
+/* line 130, ../scss/_page.scss */
 .landscape-image__image {
   float: left;
   width: 730px;
 }
 
-/* line 131, ../scss/_page.scss */
+/* line 135, ../scss/_page.scss */
 .landscape-image__caption {
   bottom: 0;
   position: absolute;
@@ -2201,37 +2206,37 @@ select {
   width: 200px;
 }
 
-/* line 139, ../scss/_page.scss */
+/* line 143, ../scss/_page.scss */
 .portrait-image-wrapper {
   width: 800px;
 }
 
-/* line 144, ../scss/_page.scss */
+/* line 148, ../scss/_page.scss */
 .portrait-image__image {
   float: left;
   margin-right: 20px;
 }
 
-/* line 149, ../scss/_page.scss */
+/* line 153, ../scss/_page.scss */
 .portrait-image__caption {
   float: left;
   margin-top: 420px;
   width: 200px;
 }
 
-/* line 156, ../scss/_page.scss */
+/* line 160, ../scss/_page.scss */
 .slides-with-map {
   padding-bottom: 50px;
   position: relative;
   width: 800px;
 }
 
-/* line 162, ../scss/_page.scss */
+/* line 166, ../scss/_page.scss */
 .swm-control {
   overflow: hidden;
 }
 
-/* line 166, ../scss/_page.scss */
+/* line 170, ../scss/_page.scss */
 .swm-control div {
   -moz-user-select: -moz-none;
   -ms-user-select: none;
@@ -2246,61 +2251,61 @@ select {
   margin: 0;
   padding: 0 5px 2px 5px;
 }
-/* line 177, ../scss/_page.scss */
+/* line 181, ../scss/_page.scss */
 .swm-control div:hover {
   opacity: .7;
 }
-/* line 181, ../scss/_page.scss */
+/* line 185, ../scss/_page.scss */
 .swm-control div:first-child {
   margin-right: 1px;
 }
 
-/* line 186, ../scss/_page.scss */
+/* line 190, ../scss/_page.scss */
 .swm-text {
   font-family: "Alegreya Sans", sans-serif;
   float: left;
   width: 50%;
 }
 
-/* line 192, ../scss/_page.scss */
+/* line 196, ../scss/_page.scss */
 .swm-text__title {
   font-size: 20px;
   margin: 10px 0 0;
 }
 
-/* line 197, ../scss/_page.scss */
+/* line 201, ../scss/_page.scss */
 .swm-text__body {
   font-size: 14px;
   margin-top: 0;
   padding-right: 10px;
 }
 
-/* line 203, ../scss/_page.scss */
+/* line 207, ../scss/_page.scss */
 .swm-map {
   bottom: 320px;
   position: absolute;
   right: 0;
   width: 40%;
 }
-/* line 209, ../scss/_page.scss */
+/* line 213, ../scss/_page.scss */
 .swm-map .mapboxgl-canvas {
   -moz-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
 }
-/* line 213, ../scss/_page.scss */
+/* line 217, ../scss/_page.scss */
 .swm-map .mapboxgl-ctrl-attrib {
   display: none;
 }
 
-/* line 218, ../scss/_page.scss */
+/* line 222, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 224, ../scss/_page.scss */
+/* line 228, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
