@@ -155,6 +155,7 @@
 
 .slides-with-map {
   padding-bottom: 50px;
+  position: relative;
   width: 800px;
 }
 
@@ -164,14 +165,22 @@
 
 .swm-control div {
   @include user-select(none);
-  background: red;
+  background: $ekuatorial-red;
   color: white;
   cursor: pointer;
   float: left;
   font-size: 30px;
   line-height: 1em;
   margin: 0;
-  padding: 0 5px;
+  padding: 0 5px 2px 5px;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:first-child {
+    margin-right: 1px;
+  }
 }
 
 .swm-text {
@@ -182,17 +191,24 @@
 
 .swm-text__title {
   font-size: 20px;
-  margin: 5px 0;
+  margin: 10px 0 0;
 }
 
 .swm-text__body {
   font-size: 14px;
+  margin-top: 0;
   padding-right: 10px;
 }
 
 .swm-map {
-  float: right;
-  width: 50%;
+  bottom: 320px;
+  position: absolute;
+  right: 0;
+  width: 40%;
+
+  .mapboxgl-canvas {
+    @include box-shadow(2px 3px 8px rgba(0, 0, 0, .2));
+  }
 
   .mapboxgl-ctrl-attrib {
     display: none

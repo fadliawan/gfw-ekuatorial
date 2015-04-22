@@ -2222,67 +2222,85 @@ select {
 /* line 156, ../scss/_page.scss */
 .slides-with-map {
   padding-bottom: 50px;
+  position: relative;
   width: 800px;
 }
 
-/* line 161, ../scss/_page.scss */
+/* line 162, ../scss/_page.scss */
 .swm-control {
   overflow: hidden;
 }
 
-/* line 165, ../scss/_page.scss */
+/* line 166, ../scss/_page.scss */
 .swm-control div {
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  background: red;
+  background: #B71C1C;
   color: white;
   cursor: pointer;
   float: left;
   font-size: 30px;
   line-height: 1em;
   margin: 0;
-  padding: 0 5px;
+  padding: 0 5px 2px 5px;
+}
+/* line 177, ../scss/_page.scss */
+.swm-control div:hover {
+  opacity: .7;
+}
+/* line 181, ../scss/_page.scss */
+.swm-control div:first-child {
+  margin-right: 1px;
 }
 
-/* line 177, ../scss/_page.scss */
+/* line 186, ../scss/_page.scss */
 .swm-text {
   font-family: "Alegreya Sans", sans-serif;
   float: left;
   width: 50%;
 }
 
-/* line 183, ../scss/_page.scss */
+/* line 192, ../scss/_page.scss */
 .swm-text__title {
   font-size: 20px;
-  margin: 5px 0;
+  margin: 10px 0 0;
 }
 
-/* line 188, ../scss/_page.scss */
+/* line 197, ../scss/_page.scss */
 .swm-text__body {
   font-size: 14px;
+  margin-top: 0;
   padding-right: 10px;
 }
 
-/* line 193, ../scss/_page.scss */
+/* line 203, ../scss/_page.scss */
 .swm-map {
-  float: right;
-  width: 50%;
+  bottom: 320px;
+  position: absolute;
+  right: 0;
+  width: 40%;
 }
-/* line 197, ../scss/_page.scss */
+/* line 209, ../scss/_page.scss */
+.swm-map .mapboxgl-canvas {
+  -moz-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+/* line 213, ../scss/_page.scss */
 .swm-map .mapboxgl-ctrl-attrib {
   display: none;
 }
 
-/* line 202, ../scss/_page.scss */
+/* line 218, ../scss/_page.scss */
 .character {
   float: right;
   margin-top: 40px;
   width: 200px;
 }
 
-/* line 208, ../scss/_page.scss */
+/* line 224, ../scss/_page.scss */
 .character__photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
