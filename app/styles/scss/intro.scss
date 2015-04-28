@@ -93,6 +93,10 @@ body {
   margin: 0 auto 0; // NOTE: Temporary top margin
   position: relative;
   width: 1202px;
+
+  img {
+    opacity: .3;
+  }
 }
 
 %intro-map {
