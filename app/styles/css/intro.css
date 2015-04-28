@@ -293,11 +293,11 @@ body {
 }
 /* line 251, ../scss/intro.scss */
 .map-pin-aceh .pin-text {
-  left: -40px;
+  left: -20px;
 }
 /* line 255, ../scss/intro.scss */
 .map-pin-riau .pin-text {
-  left: -36px;
+  left: -20px;
 }
 /* line 258, ../scss/intro.scss */
 .map-pin-riau .pin-text.pin-text--hz {
@@ -309,7 +309,7 @@ body {
 }
 /* line 267, ../scss/intro.scss */
 .map-pin-papua .pin-text {
-  left: -22px;
+  left: -20px;
 }
 
 /* line 274, ../scss/intro.scss */
