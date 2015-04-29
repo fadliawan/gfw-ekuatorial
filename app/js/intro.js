@@ -40,12 +40,4 @@
     $pin.addClass(ACTIVE_PIN_CLASS);
   }
 
-  /// Typed text ///
-
-  $('.js-summary-typed').typed({
-    strings: ['Hutan gambut Rawa Tripa, Aceh, salah satu "harta karun" provinsi itu, di ambang kehancuran. Penyidik gabungan dari Jakarta terus menelisik pelanggaran-pelanggaran yang berujung pada perusakan hutan itu'],
-    typeSpeed: 0,
-    cursorChar: "_"
-  });
-
 })(jQuery);
