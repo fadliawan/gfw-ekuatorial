@@ -271,6 +271,69 @@ body {
   }
 }
 
+.pin-boxes {
+  position: absolute;
+  top: -50px;
+  width: 320px;
+}
+
+.pin-box {
+  font-family: $alegreya-sans-sc;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3px 7px;
+  white-space: nowrap;
+
+  .map-pin.active & {
+    opacity: 1;
+  }
+
+  span {
+    @include transition(all .3s);
+    display: block;
+    width: 0;
+  }
+}
+
+.pin-box-wide {
+  background: white;
+  color: black;
+  margin-bottom: 1px;
+  width: 320px;
+
+  span {
+    .map-pin.active & {
+      width: 320px;
+    }
+  }
+}
+
+.pin-box-narrow {
+  background: black;
+  color: white;
+  float: left;
+  width: 50px;
+
+  span {
+    .map-pin.active & {
+      width: 50px;
+    }
+  }
+}
+
+.pin-box-small {
+  background: $ekuatorial-red;
+  color: white;
+  float: left;
+  width: 130px;
+
+  span {
+    .map-pin.active & {
+      width: 130px;
+    }
+  }
+}
+
 /// Summary ///
 
 .intro-summary {
