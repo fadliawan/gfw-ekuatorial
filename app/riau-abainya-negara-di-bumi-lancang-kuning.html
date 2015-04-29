@@ -85,6 +85,13 @@
           </h3>
         </section>
 
+        <section class="youtube row">
+          <video id="js-video-meranti" width="800" loop>
+            <source src="videos/meranti-sungai-tohor.webm" type="video/webm">
+            <source src="videos/meranti-sungai-tohor.mp4" type="video/mp4">
+          </video>
+        </section>
+
         <section class="writing row">
           <p class="writing-p">
             Kejengkelan yang ada di benak Menteri Lingkungan Hidup dan Kehutanan Siti Nurbaya ditumpahkan di depan wartawan di Pekanbaru, Riau. “Vonis hakim Pengadilan Negeri Bengkalis tidak memberi efek jera terhadap pelaku pembakaran lahan,” katanya, Senin, 16 Februari 2015. Dia akan mengadukan putusan tiga hakim itu ke Komisi Yudisial.
@@ -535,6 +542,26 @@
 
   <script src="components/jquery/dist/jquery.min.js"></script>
   <script src="components/jcarousellite/jcarousellite.min.js"></script>
+  <script src="components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="components/waypoints/lib/shortcuts/inview.min.js"></script>
   <script src="js/story.js"></script>
+  <!-- Video -->
+  <script>
+    var video = $('#js-video-meranti')[0];
+
+    var videoInview = new Waypoint.Inview({
+      element: video,
+
+      entered: function() {
+        video.play();
+        console.log('puter')
+      },
+
+      exited: function() {
+        video.pause();
+        console.log('pause')
+      }
+    });
+  </script>
 </body>
 </html>
