@@ -11,7 +11,7 @@
   // var $allPinLines = $('.js-pin-line');
   // var $allPinTexts = $('.js-pin-text');
 
-  var locations = ['aceh', 'riau', 'kalteng', 'papua'];
+  var locations = ['aceh', 'riau', 'tesso', 'kalteng', 'papua'];
   var $maps = {}, $area = {}, $pins = {};
 
   $allMaps.on('click', function() {
@@ -24,11 +24,14 @@
     $area[location] = $('.js-area-' + location);
     $pins[location] = $('.js-map-pin-' + location);
 
-    $area[location].on('mouseenter', function() {
-      if ($maps[location].is(':visible')) return;
+    $pins[location].on('mouseenter', function() {
+      if ($pins[location].hasClass(ACTIVE_PIN_CLASS)) return;
 
       $allMaps.fadeOut();
-      $maps[location].fadeIn();
+
+      var mapLocation = location === 'tesso' ? 'riau' : location;
+      $maps[mapLocation].fadeIn();
+
       showPin($pins[location]);
     });
   });

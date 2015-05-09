@@ -152,6 +152,9 @@ body {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -moz-animation: pin-anim 2s linear 0.5s infinite;
+  -webkit-animation: pin-anim 2s linear 0.5s infinite;
+  animation: pin-anim 2s linear 0.5s infinite;
   background: #000;
   border: 4px solid rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
@@ -198,139 +201,54 @@ body {
 .map-pin-riau {
   left: 153px;
   top: 160px;
+  z-index: 100;
 }
 
-/* line 186, ../scss/intro.scss */
+/* line 187, ../scss/intro.scss */
+.map-pin-tesso {
+  left: 193px;
+  top: 140px;
+}
+
+/* line 192, ../scss/intro.scss */
 .map-pin-kalteng {
   left: 467px;
   top: 226px;
 }
 
-/* line 191, ../scss/intro.scss */
+/* line 197, ../scss/intro.scss */
 .map-pin-papua {
   left: 975px;
   top: 212px;
 }
 
-/* line 196, ../scss/intro.scss */
-.pin-line {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  transform: scale(0, 0);
-  background: #000;
-  height: 0;
-  left: 7px;
-  position: absolute;
-  top: -80px;
-  width: 4px;
-  z-index: 31;
-}
-/* line 207, ../scss/intro.scss */
-.map-pin.active .pin-line {
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  height: 90px;
-  width: 4px;
-}
-/* line 213, ../scss/intro.scss */
-.pin-line.pin-line--hz {
-  height: 4px;
-  left: 15px;
-  top: 8px;
-  width: 0;
-}
-/* line 219, ../scss/intro.scss */
-.map-pin.active .pin-line.pin-line--hz {
-  height: 4px;
-  width: 90px;
-}
-
-/* line 226, ../scss/intro.scss */
-.pin-text {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  transform: scale(0, 0);
-  background: #000;
-  font-family: "Alegreya Sans SC", sans-serif;
-  opacity: 0;
-  padding: 8px 10px;
-  position: absolute;
-  text-align: center;
-  top: -114px;
-  white-space: nowrap;
-}
-/* line 239, ../scss/intro.scss */
-.map-pin.active .pin-text {
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  opacity: 1;
-}
-/* line 244, ../scss/intro.scss */
-.pin-text.pin-text--hz {
-  top: -8px;
-}
-/* line 248, ../scss/intro.scss */
-.pin-text a {
-  color: #F44336;
-}
-/* line 253, ../scss/intro.scss */
-.map-pin-aceh .pin-text {
-  left: -20px;
-}
-/* line 257, ../scss/intro.scss */
-.map-pin-riau .pin-text {
-  left: -20px;
-}
-/* line 260, ../scss/intro.scss */
-.map-pin-riau .pin-text.pin-text--hz {
-  left: 103px;
-}
-/* line 265, ../scss/intro.scss */
-.map-pin-kalteng .pin-text {
-  left: -40px;
-}
-/* line 269, ../scss/intro.scss */
-.map-pin-papua .pin-text {
-  left: -20px;
-}
-
-/* line 274, ../scss/intro.scss */
+/* line 202, ../scss/intro.scss */
 .pin-boxes {
   position: absolute;
   top: -55px;
-  width: 320px;
+}
+/* line 206, ../scss/intro.scss */
+.map-pin-papua .pin-boxes {
+  top: -75px;
 }
 
-/* line 280, ../scss/intro.scss */
+/* line 211, ../scss/intro.scss */
 .pin-box {
   -moz-transition: width 0.3s;
   -o-transition: width 0.3s;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
+  -moz-box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.3);
   font-family: "Alegreya Sans SC", sans-serif;
   overflow: hidden;
   padding: 3px 0;
+  position: relative;
   white-space: nowrap;
   width: 0;
 }
-/* line 288, ../scss/intro.scss */
+/* line 221, ../scss/intro.scss */
 .pin-box span {
   -moz-transition: width 0.3s 0.2s;
   -o-transition: width 0.3s 0.2s;
@@ -343,47 +261,52 @@ body {
   width: 0;
 }
 
-/* line 297, ../scss/intro.scss */
+/* line 231, ../scss/intro.scss */
+.map-pin.active .pin-box-wide, .map-pin.active .pin-box-wide span, .pin-box-wide .map-pin.active span {
+  width: 320px;
+}
+/* line 235, ../scss/intro.scss */
+.map-pin-kalteng.active .pin-box-wide, .map-pin-kalteng.active .pin-box-wide span, .pin-box-wide .map-pin-kalteng.active span {
+  width: 360px;
+}
+
+/* line 240, ../scss/intro.scss */
 .pin-box-wide {
   background: white;
   color: black;
   margin-bottom: 1px;
 }
-/* line 302, ../scss/intro.scss */
-.map-pin.active .pin-box-wide {
-  width: 320px;
-}
-/* line 307, ../scss/intro.scss */
-.map-pin.active .pin-box-wide span {
-  width: 320px;
+/* line 245, ../scss/intro.scss */
+.map-pin-papua .pin-box-wide {
+  white-space: normal;
 }
 
-/* line 313, ../scss/intro.scss */
+/* line 256, ../scss/intro.scss */
 .pin-box-narrow {
   background: black;
   color: white;
   float: left;
 }
-/* line 318, ../scss/intro.scss */
+/* line 261, ../scss/intro.scss */
 .map-pin.active .pin-box-narrow {
-  width: 50px;
+  width: 55px;
 }
-/* line 323, ../scss/intro.scss */
+/* line 266, ../scss/intro.scss */
 .map-pin.active .pin-box-narrow span {
-  width: 50px;
+  width: 55px;
 }
 
-/* line 329, ../scss/intro.scss */
+/* line 272, ../scss/intro.scss */
 .pin-box-small {
   background: #B71C1C;
   color: white;
   float: left;
 }
-/* line 334, ../scss/intro.scss */
+/* line 277, ../scss/intro.scss */
 .map-pin.active .pin-box-small {
   width: 130px;
 }
-/* line 339, ../scss/intro.scss */
+/* line 282, ../scss/intro.scss */
 .map-pin.active .pin-box-small span {
   width: 130px;
 }

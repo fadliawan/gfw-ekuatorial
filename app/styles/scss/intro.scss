@@ -141,7 +141,7 @@ body {
 .map-pin {
   @include border-radius(100px);
   @include transition(all .3s);
-  // @include animation(pin-anim 2s linear 0s infinite);
+  @include animation(pin-anim 2s linear 0.5s infinite);
   background: $pitch-black;
   border: 4px solid rgba(0, 0, 0, .5);
   // Required for transparent border with opaque background color
@@ -181,6 +181,12 @@ body {
 .map-pin-riau {
   left: 153px;
   top: 160px;
+  z-index: 100;
+}
+
+.map-pin-tesso {
+  left: 193px;
+  top: 140px;
 }
 
 .map-pin-kalteng {
@@ -193,95 +199,22 @@ body {
   top: 212px;
 }
 
-.pin-line {
-  @include transition(all .3s);
-  @include scale(0);
-  background: #000;
-  height: 0;
-  left: 7px;
-  position: absolute;
-  top: -80px;
-  width: 4px;
-  z-index: 31;
-
-  .map-pin.active & {
-    @include scale(1);
-    height: 90px;
-    width: 4px;
-  }
-
-  &.pin-line--hz {
-    height: 4px;
-    left: 15px;
-    top: 8px;
-    width: 0;
-
-    .map-pin.active & {
-      height: 4px;
-      width: 90px;
-    }
-  }
-}
-
-.pin-text {
-  @include border-radius(5px);
-  @include transition(all .3s);
-  @include scale(0);
-  background: $pitch-black;
-  font-family: $alegreya-sans-sc;
-  opacity: 0;
-  padding: 8px 10px;
-  position: absolute;
-  text-align: center;
-  top: -114px;
-  white-space: nowrap;
-
-  .map-pin.active & {
-    @include scale(1);
-    opacity: 1;
-  }
-
-  &.pin-text--hz {
-    top: -8px;
-  }
-
-  a {
-    color: #F44336;
-    // text-decoration: none;
-  }
-
-  .map-pin-aceh & {
-    left: -20px;
-  }
-
-  .map-pin-riau & {
-    left: -20px;
-
-    &.pin-text--hz {
-      left: 103px;
-    }
-  }
-
-  .map-pin-kalteng & {
-    left: -40px;
-  }
-
-  .map-pin-papua & {
-    left: -20px;
-  }
-}
-
 .pin-boxes {
   position: absolute;
   top: -55px;
-  width: 320px;
+
+  .map-pin-papua & {
+    top: -75px;
+  }
 }
 
 .pin-box {
   @include transition(width .3s);
+  @include box-shadow(1px 8px 20px rgba(0, 0, 0, .3));
   font-family: $alegreya-sans-sc;
   overflow: hidden;
   padding: 3px 0;
+  position: relative;
   white-space: nowrap;
   width: 0;
 
@@ -294,19 +227,29 @@ body {
   }
 }
 
+%pin-box-wide-dimensions {
+  .map-pin.active & {
+    width: 320px;
+  }
+
+  .map-pin-kalteng.active & {
+    width: 360px;
+  }
+}
+
 .pin-box-wide {
   background: white;
   color: black;
   margin-bottom: 1px;
 
-  .map-pin.active & {
-    width: 320px;
+  .map-pin-papua & {
+    white-space: normal;
   }
 
+  @extend %pin-box-wide-dimensions;
+
   span {
-    .map-pin.active & {
-      width: 320px;
-    }
+    @extend %pin-box-wide-dimensions;
   }
 }
 
@@ -316,12 +259,12 @@ body {
   float: left;
 
   .map-pin.active & {
-    width: 50px;
+    width: 55px;
   }
 
   span {
     .map-pin.active & {
-      width: 50px;
+      width: 55px;
     }
   }
 }
