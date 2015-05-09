@@ -141,7 +141,7 @@ body {
 .map-pin {
   @include border-radius(100px);
   @include transition(all .3s);
-  @include animation(pin-anim 2s linear 0s infinite);
+  // @include animation(pin-anim 2s linear 0s infinite);
   background: $pitch-black;
   border: 4px solid rgba(0, 0, 0, .5);
   // Required for transparent border with opaque background color
@@ -273,24 +273,23 @@ body {
 
 .pin-boxes {
   position: absolute;
-  top: -50px;
+  top: -55px;
   width: 320px;
 }
 
 .pin-box {
+  @include transition(width .3s);
   font-family: $alegreya-sans-sc;
-  opacity: 0;
   overflow: hidden;
-  padding: 3px 7px;
+  padding: 3px 0;
   white-space: nowrap;
-
-  .map-pin.active & {
-    opacity: 1;
-  }
+  width: 0;
 
   span {
-    @include transition(all .3s);
+    @include transition(width .3s .2s);
     display: block;
+    overflow: hidden;
+    margin: 0 7px;
     width: 0;
   }
 }
@@ -299,7 +298,10 @@ body {
   background: white;
   color: black;
   margin-bottom: 1px;
-  width: 320px;
+
+  .map-pin.active & {
+    width: 320px;
+  }
 
   span {
     .map-pin.active & {
@@ -312,7 +314,10 @@ body {
   background: black;
   color: white;
   float: left;
-  width: 50px;
+
+  .map-pin.active & {
+    width: 50px;
+  }
 
   span {
     .map-pin.active & {
@@ -325,7 +330,10 @@ body {
   background: $ekuatorial-red;
   color: white;
   float: left;
-  width: 130px;
+
+  .map-pin.active & {
+    width: 130px;
+  }
 
   span {
     .map-pin.active & {
@@ -333,62 +341,3 @@ body {
     }
   }
 }
-
-/// Summary ///
-
-.intro-summary {
-  color: white;
-  margin: 30px auto 0;
-  width: 750px;
-}
-
-.summary-date {
-  font-family: $alegreya-sans;
-  font-size: 20px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.summary-heading {
-  font-family: $alegreya;
-  font-style: italic;
-  font-size: 30px;
-  margin: 10px 0 5px;
-  text-transform: uppercase;
-}
-
-.summary-text {
-  font-family: $alegreya;
-  font-size: 26px;
-  font-style: italic;
-  line-height: 1.2em;
-  margin: 0;
-}
-
-// Typed cursor
-.typed-cursor {
-  font-size: 26px;
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-
-@-webkit-keyframes blink {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-
-@-moz-keyframes blink {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-

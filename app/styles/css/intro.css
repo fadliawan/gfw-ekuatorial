@@ -152,9 +152,6 @@ body {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -moz-animation: pin-anim 2s linear 0s infinite;
-  -webkit-animation: pin-anim 2s linear 0s infinite;
-  animation: pin-anim 2s linear 0s infinite;
   background: #000;
   border: 4px solid rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
@@ -317,140 +314,76 @@ body {
 /* line 274, ../scss/intro.scss */
 .pin-boxes {
   position: absolute;
-  top: -50px;
+  top: -55px;
   width: 320px;
 }
 
 /* line 280, ../scss/intro.scss */
 .pin-box {
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
   font-family: "Alegreya Sans SC", sans-serif;
-  opacity: 0;
   overflow: hidden;
-  padding: 3px 7px;
+  padding: 3px 0;
   white-space: nowrap;
+  width: 0;
 }
-/* line 287, ../scss/intro.scss */
-.map-pin.active .pin-box {
-  opacity: 1;
-}
-/* line 291, ../scss/intro.scss */
+/* line 288, ../scss/intro.scss */
 .pin-box span {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -moz-transition: width 0.3s 0.2s;
+  -o-transition: width 0.3s 0.2s;
+  -webkit-transition: width 0.3s;
+  -webkit-transition-delay: 0.2s;
+  transition: width 0.3s 0.2s;
   display: block;
+  overflow: hidden;
+  margin: 0 7px;
   width: 0;
 }
 
-/* line 298, ../scss/intro.scss */
+/* line 297, ../scss/intro.scss */
 .pin-box-wide {
   background: white;
   color: black;
   margin-bottom: 1px;
+}
+/* line 302, ../scss/intro.scss */
+.map-pin.active .pin-box-wide {
   width: 320px;
 }
-/* line 305, ../scss/intro.scss */
+/* line 307, ../scss/intro.scss */
 .map-pin.active .pin-box-wide span {
   width: 320px;
 }
 
-/* line 311, ../scss/intro.scss */
+/* line 313, ../scss/intro.scss */
 .pin-box-narrow {
   background: black;
   color: white;
   float: left;
-  width: 50px;
 }
 /* line 318, ../scss/intro.scss */
+.map-pin.active .pin-box-narrow {
+  width: 50px;
+}
+/* line 323, ../scss/intro.scss */
 .map-pin.active .pin-box-narrow span {
   width: 50px;
 }
 
-/* line 324, ../scss/intro.scss */
+/* line 329, ../scss/intro.scss */
 .pin-box-small {
   background: #B71C1C;
   color: white;
   float: left;
+}
+/* line 334, ../scss/intro.scss */
+.map-pin.active .pin-box-small {
   width: 130px;
 }
-/* line 331, ../scss/intro.scss */
+/* line 339, ../scss/intro.scss */
 .map-pin.active .pin-box-small span {
   width: 130px;
-}
-
-/* line 339, ../scss/intro.scss */
-.intro-summary {
-  color: white;
-  margin: 30px auto 0;
-  width: 750px;
-}
-
-/* line 345, ../scss/intro.scss */
-.summary-date {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 20px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-/* line 352, ../scss/intro.scss */
-.summary-heading {
-  font-family: "Alegreya", serif;
-  font-style: italic;
-  font-size: 30px;
-  margin: 10px 0 5px;
-  text-transform: uppercase;
-}
-
-/* line 360, ../scss/intro.scss */
-.summary-text {
-  font-family: "Alegreya", serif;
-  font-size: 26px;
-  font-style: italic;
-  line-height: 1.2em;
-  margin: 0;
-}
-
-/* line 369, ../scss/intro.scss */
-.typed-cursor {
-  font-size: 26px;
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
