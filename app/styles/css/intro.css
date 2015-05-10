@@ -39,10 +39,10 @@ body {
 
 /* line 44, ../scss/intro.scss */
 .mute-button {
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
   -moz-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
@@ -53,8 +53,8 @@ body {
   height: 70px;
   opacity: 0.7;
   position: fixed;
-  top: 20px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   width: 72px;
   z-index: 200;
 }

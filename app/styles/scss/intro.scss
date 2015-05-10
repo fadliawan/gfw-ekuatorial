@@ -42,7 +42,7 @@ body {
 }
 
 .mute-button {
-  @include transform(scale(.5));
+  @include transform(scale(.4));
   @include transition(opacity .3s);
   background: url('../img/icons.png') no-repeat;
   background-position: 6px -85px;
@@ -50,8 +50,8 @@ body {
   height: 70px;
   opacity: 0.7;
   position: fixed;
-  top: 20px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   width: 72px;
   z-index: 200;
 
