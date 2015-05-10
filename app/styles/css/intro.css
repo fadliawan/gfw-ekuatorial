@@ -38,13 +38,43 @@ body {
 }
 
 /* line 44, ../scss/intro.scss */
+.mute-button {
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background: url("../img/icons.png") no-repeat;
+  background-position: 6px -85px;
+  cursor: pointer;
+  height: 70px;
+  opacity: 0.7;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 72px;
+  z-index: 200;
+}
+/* line 58, ../scss/intro.scss */
+.mute-button.muted {
+  background-position: -13px 8px;
+}
+/* line 62, ../scss/intro.scss */
+.mute-button:hover {
+  opacity: 0.3;
+}
+
+/* line 67, ../scss/intro.scss */
 .intro-overlay {
   min-height: 100%;
   position: absolute;
   width: 100%;
 }
 
-/* line 50, ../scss/intro.scss */
+/* line 73, ../scss/intro.scss */
 .intro-branding__logo {
   background: url("../img/ekuatorial-logo-grey.png") no-repeat;
   height: 50px;
@@ -53,7 +83,7 @@ body {
   width: 33px;
 }
 
-/* line 58, ../scss/intro.scss */
+/* line 81, ../scss/intro.scss */
 .intro-branding__text {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Alegreya Sans SC", sans-serif;
@@ -62,7 +92,7 @@ body {
   text-align: center;
 }
 
-/* line 67, ../scss/intro.scss */
+/* line 90, ../scss/intro.scss */
 .intro-heading h1,
 .intro-heading h2 {
   color: white;
@@ -74,7 +104,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 79, ../scss/intro.scss */
+/* line 102, ../scss/intro.scss */
 .intro-heading h2 {
   font-size: 28px;
   color: rgba(255, 255, 255, 0.5);
@@ -82,19 +112,19 @@ body {
   margin: 30px 0 5px;
 }
 
-/* line 89, ../scss/intro.scss */
+/* line 112, ../scss/intro.scss */
 .intro-maps {
   height: 484px;
   margin: 0 auto 0;
   position: relative;
   width: 1202px;
 }
-/* line 95, ../scss/intro.scss */
+/* line 118, ../scss/intro.scss */
 .intro-maps img {
   opacity: .3;
 }
 
-/* line 100, ../scss/intro.scss */
+/* line 123, ../scss/intro.scss */
 .map-indonesia, .map-aceh, .map-riau, .map-kalteng, .map-papua {
   display: none;
   position: absolute;
@@ -103,7 +133,7 @@ body {
   z-index: 20;
 }
 
-/* line 108, ../scss/intro.scss */
+/* line 131, ../scss/intro.scss */
 .map-indonesia {
   display: block;
   z-index: 10;
@@ -143,7 +173,7 @@ body {
     transform: scale(1, 1);
   }
 }
-/* line 141, ../scss/intro.scss */
+/* line 164, ../scss/intro.scss */
 .map-pin {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -168,7 +198,7 @@ body {
   width: 18px;
   z-index: 30;
 }
-/* line 157, ../scss/intro.scss */
+/* line 180, ../scss/intro.scss */
 .map-pin:before {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -184,7 +214,7 @@ body {
   text-indent: -9999px;
   z-index: 32;
 }
-/* line 171, ../scss/intro.scss */
+/* line 194, ../scss/intro.scss */
 .map-pin.active {
   -moz-animation: none;
   -webkit-animation: none;
@@ -192,48 +222,48 @@ body {
   opacity: 1;
 }
 
-/* line 177, ../scss/intro.scss */
+/* line 200, ../scss/intro.scss */
 .map-pin-aceh {
   left: 38px;
   top: 57px;
 }
 
-/* line 182, ../scss/intro.scss */
+/* line 205, ../scss/intro.scss */
 .map-pin-riau {
   left: 153px;
   top: 160px;
   z-index: 100;
 }
 
-/* line 188, ../scss/intro.scss */
+/* line 211, ../scss/intro.scss */
 .map-pin-tesso {
   left: 193px;
   top: 140px;
 }
 
-/* line 193, ../scss/intro.scss */
+/* line 216, ../scss/intro.scss */
 .map-pin-kalteng {
   left: 467px;
   top: 226px;
 }
 
-/* line 198, ../scss/intro.scss */
+/* line 221, ../scss/intro.scss */
 .map-pin-papua {
   left: 975px;
   top: 212px;
 }
 
-/* line 203, ../scss/intro.scss */
+/* line 226, ../scss/intro.scss */
 .pin-boxes {
   position: absolute;
   top: -55px;
 }
-/* line 207, ../scss/intro.scss */
+/* line 230, ../scss/intro.scss */
 .map-pin-papua .pin-boxes {
   top: -75px;
 }
 
-/* line 212, ../scss/intro.scss */
+/* line 235, ../scss/intro.scss */
 .pin-box {
   -moz-transition: width 0.3s;
   -o-transition: width 0.3s;
@@ -249,7 +279,7 @@ body {
   white-space: nowrap;
   width: 0;
 }
-/* line 222, ../scss/intro.scss */
+/* line 245, ../scss/intro.scss */
 .pin-box span {
   -moz-transition: width 0.3s 0.2s;
   -o-transition: width 0.3s 0.2s;
@@ -262,52 +292,52 @@ body {
   width: 0;
 }
 
-/* line 232, ../scss/intro.scss */
+/* line 255, ../scss/intro.scss */
 .map-pin.active .pin-box-wide, .map-pin.active .pin-box-wide span, .pin-box-wide .map-pin.active span {
   width: 320px;
 }
-/* line 236, ../scss/intro.scss */
+/* line 259, ../scss/intro.scss */
 .map-pin-kalteng.active .pin-box-wide, .map-pin-kalteng.active .pin-box-wide span, .pin-box-wide .map-pin-kalteng.active span {
   width: 360px;
 }
 
-/* line 241, ../scss/intro.scss */
+/* line 264, ../scss/intro.scss */
 .pin-box-wide {
   background: white;
   color: black;
   margin-bottom: 1px;
 }
-/* line 246, ../scss/intro.scss */
+/* line 269, ../scss/intro.scss */
 .map-pin-papua .pin-box-wide {
   white-space: normal;
 }
 
-/* line 257, ../scss/intro.scss */
+/* line 280, ../scss/intro.scss */
 .pin-box-narrow {
   background: black;
   color: white;
   float: left;
 }
-/* line 262, ../scss/intro.scss */
+/* line 285, ../scss/intro.scss */
 .map-pin.active .pin-box-narrow {
   width: 55px;
 }
-/* line 267, ../scss/intro.scss */
+/* line 290, ../scss/intro.scss */
 .map-pin.active .pin-box-narrow span {
   width: 55px;
 }
 
-/* line 273, ../scss/intro.scss */
+/* line 296, ../scss/intro.scss */
 .pin-box-small {
   background: #B71C1C;
   color: white;
   float: left;
 }
-/* line 278, ../scss/intro.scss */
+/* line 301, ../scss/intro.scss */
 .map-pin.active .pin-box-small {
   width: 130px;
 }
-/* line 283, ../scss/intro.scss */
+/* line 306, ../scss/intro.scss */
 .map-pin.active .pin-box-small span {
   width: 130px;
 }

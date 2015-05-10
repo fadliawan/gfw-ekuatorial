@@ -43,4 +43,15 @@
     $pin.addClass(ACTIVE_PIN_CLASS);
   }
 
+  /// Mute Button ///
+
+  var introVideo = $('.js-intro-video')[0];
+  var $muteButton = $('.js-mute-button');
+
+  $muteButton.on('click', function () {
+    introVideo.volume = 1 - introVideo.volume;
+
+    $muteButton.toggleClass('muted');
+  });
+
 })(jQuery);
